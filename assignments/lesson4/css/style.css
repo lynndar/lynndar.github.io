@@ -1,0 +1,81 @@
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkgreen;
+    padding: 0 0px;
+    color: darkkhaki;
+    height: 250px;
+    margin: 10 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.headertext {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+header img {
+    display: block;
+    padding:0;
+    margin-top: -15px;
+    border-style: solid;color: darkkhaki;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+
+.motto {
+    width: 100%;
+    padding-top: 0;
+    margin-right: 175px;
+    text-align: center;
+    font-family:'Arvo', serif;
+    font-size: 16px;
+}
+
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 0 0;
+    overflow: hidden;
+    background-color: darkkhaki;
+    display: block;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+li a:hover {
+    background: khaki;
+}
+#cityname {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
