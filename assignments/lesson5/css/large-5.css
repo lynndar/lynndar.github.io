@@ -1,0 +1,31 @@
+
+.weatherdetails {
+    font-size: 1rem;
+    padding-left: 20px;
+    display: inline-block;
+
+}
+
+.label {
+    display:inline-block;
+    padding-left: 20px;
+    width: 100px;
+    margin-top: 0px;
+}
+
+.value {
+    display:inline-block;
+    left: 150px;
+    width: 100px; 
+    margin-top: 0px;   
+}
+
+.forecast {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
