@@ -1,0 +1,226 @@
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkgreen;
+    padding: 0 0px;
+    color: darkkhaki;
+    height: 250px;
+    margin: 10 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.headertext {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+.logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    vertical-align: left;
+    float: left;
+    margin-top: -120px;
+    margin-left: 220px;
+    border: 15px solid darkkhaki;
+    
+}
+.motto {
+    width: 100%;
+    padding-right: 125;
+    font-family:'Arvo', serif;
+    font-size: 16px;
+}
+
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: darkkhaki;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+li {
+   display: inline-block;
+   font-size: 1.5rem;
+   padding: .5rem;
+   vertical-align: center;
+}
+
+li a {
+    color: darkolivegreen;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+nav :hover {
+    background: khaki;
+}
+.menu{
+    margin: 0 30px 0 0;
+    display: inline;
+}
+.hamburger {
+    display: none;
+}
+@media (max-width:768){
+
+    .hamburger.line{
+    width:50px;
+    height:5px;
+    display: block;
+    background-color: darkgreen;
+    margin:8px auto;
+    }
+}
+
+#cityname {
+    font-size: 25px;
+    text-align: center;
+    color: darkolivegreen
+}
+.river {
+    max-width:100%;
+    margin-top: -60px;
+    margin-left: 0px;
+}
+.weathersummary {
+    position: relative;
+}
+h3 {
+    text-decoration: underline;
+    font-family: 'Source San Pro';
+}
+
+.weathersummary1 {
+    background-color:darkgreen;
+    padding: 10px;
+    line-height: 0.5em;
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    left: 20px;
+    top: 40px;
+    float: inherit;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-family:'Arvo', serif;
+    font-size: 14px; color: darkkhaki;
+}
+.weatherdetail {
+    vertical-align: center;
+}
+main {
+    max-width: 800px;
+    margin:auto;
+}
+
+.town {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 55%;
+}   
+
+.heroimage {
+    width: 100%;
+    margin-right: -65px;
+}
+
+.summary {
+    position: relative;
+    display:block;
+    margin:auto;
+}
+
+
+.article1 {
+    background-color: darkkhaki;
+    font-family: 'Arvo',serif;
+    font-size: 14px;
+    margin: auto;
+    width: 40%;
+    height:500px;
+    text-align: center;
+
+}
+article h3 {
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    color:darkgreen;
+    padding-top: .5em;
+}
+.articleimage {
+    width: 300px;
+    height:auto;
+    float: center;
+    padding-right: 0;
+    box-shadow: 5px 5px 5px black;
+}
+article p {
+    font-size: 14px;
+    text-align:center;
+    position: absolute;
+    display: inline-block;
+    margin-left: -30%;
+    margin-right: 33%;
+    margin-top: 18%;
+}
+.contactinfo {
+    width: 55%;
+    margin: auto;
+    height: 250px;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.map {
+    width:200px;
+    height: auto;
+    float: center;
+    padding-right: 20px;
+    padding-top: 80px;
+    margin-top: -500px;
+    margin-bottom: 8%;
+}
+footer {
+    margin-top: 50px;
+}
+
+footer aside {
+    color: darkgreen;
+    background-color: darkkhaki;
+    padding: 0.5em;
+    text-align: center;
+    height: 350px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+}
+footer>p {
+    width: 100%;
+    height: 50px;
+    margin-top: -25%;
+    padding-top: 20px;
+    text-align: center;
+    background-color: darkgreen;
+    font-family:'Arvo', serif;
+    font-size: 14px; color: darkkhaki;
+}
