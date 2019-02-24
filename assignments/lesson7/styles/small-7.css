@@ -1,0 +1,315 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+    /*----------- BODY --------------*/
+    body {
+        font-size: 16px;
+        font-family: 'Cinzel Decorative', cursive;
+        background-color: white;
+        heigth: 25%;
+    }
+
+
+    /*----------- HEADER --------------*/
+    header {
+        padding: 0.5rem 2%;
+        background-color:khaki;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 45px;
+        color: darkkhaki;
+        text-align: center;
+        text-shadow: 2px 2px black;
+    }
+
+    header h3 {
+        margin: 0;
+        font-weight: normal;
+        text-align: center;
+        color: darkkhaki;
+        text-align: center;
+        font-family:'Arvo', serif;
+        text-shadow: 2px 2px black;
+    }
+
+    header .hamburger {
+        position: relative;
+        float: right;
+    }
+
+    .logo {
+        float: left;
+        margin: 0 2% 0 0;
+    }
+
+    /*----------- NAVIGATION --------------*/
+    nav {
+        background-color: darkkhaki;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+    nav ul li a {
+        display: block;
+        background-color: darkkhaki;
+        color: darkgreen;
+        border-left: 1px solid khaki;
+        padding: .5rem 0;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+    }
+    nav ul li:first-child a {border-left: none;}
+
+    nav ul li a:hover {
+        background-color: darkkhaki;
+        color: darkolivegreen;
+    }
+    nav ul li.active a {
+        background-color: darkolivegreen;
+        color: khaki;
+    }
+
+    /*------ HAMBURGER ------*/
+    * {
+        margin: 0;
+    }
+
+    header {
+        background-color: darkgreen;
+    }
+
+    h1 {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1.25rem;
+    }
+
+    .navigation {
+        list-style: none;
+        padding-left: 0;
+    }
+    .navigation li {
+        display: none;
+    }
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        background-color: khaki;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid darkgreen;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: khaki
+    }
+    }
+
+@media only screen and (min-width: 37.5em) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        background-color: darkkhaki;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0px 0px 15px 0px black;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-left: 0.25rem;
+    }
+
+    .navigation a {
+        display: block;
+        color: darkgreen;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0px 0px 5px 0px gray;
+    }
+
+    .navigation a:hover {
+        color: #000;
+        background-color: darkolivegreen;
+    }
+    }
+
+/*----------- MAIN --------------*/
+main {
+    position: relative;
+    bottom: 15px;
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+main h1 {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: darkolivegreen
+}
+
+main .prestonsummary {
+    bottom: 20px;
+    text-align: left;
+    position: relative;
+    bottom: 20px;
+    background-color:darkgreen;
+    padding: 10px;
+    line-height: 0.5em;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: 20px;
+    top: 40px;
+    float: inherit;
+    z-index: 1;
+    border-radius: 35px 0px 35px 0px;
+    box-shadow: 5px 5px 5px black;
+    font-family:'Arvo', serif;
+    font-size: 16px; color: darkkhaki;
+  }  
+
+main picture.myphoto {
+    width: 50%;   
+}
+
+main picture.myphoto img {
+    width: 100%;
+}
+
+main .town-news h3 {
+    width: 70%;
+}
+article h3 {
+    font-family:'Arvo', serif;
+    font-size: 18px;
+    color:darkgreen;
+    padding-top: .5em;
+    text-decoration: none;
+}
+.town-news img {
+    width: 30%;
+    position: relative;
+    top: 20px;
+    height:auto;
+    float: center;
+    padding-right: 0;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15%;
+}
+
+article {
+    text-align: center;
+    position: relative;
+    bottom: 70px; 
+    background-color: darkkhaki;
+    font-family: 'Arvo',serif;
+    font-size: 14px;
+    margin: auto;
+    width: 40%;
+    height:400px;
+    box-shadow: 13px 13px 49px 0px rgba(130,130,130,1);
+}
+
+
+/*----------- FOOTER --------------*/
+aside {
+    color: darkkhaki;
+    background-color: darkgreen;
+    padding: 0.5em;
+    text-align: center;
+    height: -150px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color:darkkhaki;
+    color: darkgreen;
+    text-align: center;
+    width: inherit;
+    height: 25%;
+    padding: .5rem 2%;
+    font-family:'Arvo', serif;
+    font-size: 14px; 
+}
+footer>p {
+    padding: 0px 30px 10px;
+    font-family:'Arvo', serif;
+    font-size: 14px; color: darkgreen;
+    text-align: center;
+}
+
+  
+  .contact address pre {
+    width: 100%;
+    float: center;
+    font-family:'Arvo', serif;
+    font-size: 14px; color: darkkhaki;
+  }
+
+  
+  /*------- Map Iframe -------*/
+  
+  
+  #map {
+    width: 25%;
+    height: auto;
+    align-content: center;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 10px 18px 5px #0a0909;
+  }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
