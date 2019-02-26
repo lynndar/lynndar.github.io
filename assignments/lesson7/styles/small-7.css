@@ -259,9 +259,16 @@ article {
 
 
 /*----------- FOOTER --------------*/
+.contactinfo {
+    width: 35%;
+    margin: auto;
+    height: 250px;
+    margin-top: 40px;
+    text-align: center;
+}
 aside {
-    color: darkkhaki;
-    background-color: darkgreen;
+    color: darkgreen;
+    background-color: darkkhaki;
     padding: 0.5em;
     text-align: center;
     height: -150px;
@@ -269,9 +276,26 @@ aside {
     font-size: 14px;
     margin-bottom: 20px;
 }
+.map {
+    width:200px;
+    float: center;
+    box-align: center;
+    padding-right: 0px;
+    padding-top: -280px;
+    margin: 0px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;    
+}
+.footer-bar {
+    width: 100%;
+    padding: 60px 0px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    text-align: center;
+}
 footer {
-    background-color:darkkhaki;
-    color: darkgreen;
+    background-color:darkgreen;
+    color: darkkhaki;
     text-align: center;
     width: inherit;
     height: 25%;
@@ -279,32 +303,16 @@ footer {
     font-family:'Arvo', serif;
     font-size: 14px; 
 }
-footer>p {
-    padding: 0px 30px 10px;
-    font-family:'Arvo', serif;
-    font-size: 14px; color: darkgreen;
-    text-align: center;
-}
+
+
 
   
-  .contact address pre {
-    width: 100%;
-    float: center;
-    font-family:'Arvo', serif;
-    font-size: 14px; color: darkkhaki;
-  }
+ 
 
   
   /*------- Map Iframe -------*/
   
-  
-  #map {
-    width: 25%;
-    height: auto;
-    align-content: center;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 10px 18px 5px #0a0909;
-  }
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
