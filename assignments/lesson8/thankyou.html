@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A place were we can report the weather condition.">
+        <meta name="author" content="Lynnda Robinson">
+
+        <title>Lesson 8 - Weather Site Thank You|Lynnda Robinson</title>
+
+        <!-- TELLS MOBILE DEVICE ABOUT THEIR WIDTH -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- STYLE SHEETS -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="styles/small-8.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="styles/medium-8.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="styles/large-8.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
+
+    </head>
+
+    <body>
+         <!-- HEADER -->
+         <header class="clearfix">
+            <h1>The Wild and Wacky Weather</h1>
+                <h3>Where All Your Weather Needs Are Met</h3>
+               
+                <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            </header>
+
+         <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->
+        <main>
+            <div id="thankyou" class="clearfix">
+                <p id="thanks">Thank you for Visiting!</p></br>
+                <p id="message">If it weren't for folks like yourself, we would never know what the wild and wackey weather would be.</p>
+            </div>
+        </main>
+
+    <!-- FOOTER-->
+    <footer>
+        <div class="wrapper">
+           <p id="footend-copy">&copy; 2019 | The Wild and Wacky Weather |<span id="currentdate"><p id="demo">Monday, April 6, 2020</p></span>
+       </div>
+       </footer> 
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/stormSeverityRange.js"></script>
+    </body>
+
+</html>

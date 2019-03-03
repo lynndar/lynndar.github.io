@@ -1,0 +1,92 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+   main .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-column-gap: 140px;
+        grid-row-gap: 20px;
+
+    }
+    label {
+        display: block;
+        margin: .5em;
+        font-family:'Arvo', serif;
+        
+    }
+    label span {
+        display: block;
+        font-size: .8em;
+        color: darkgreen;
+        font-family:'Arvo', serif;
+        padding-top: .9em;
+        padding-bottom: .2em;
+    }
+    input.submitBtn {
+        color: darkkhaki;
+        border: solid 1px #111;
+        border-radius: 7px;
+        width: 50%;
+        margin: .5em 0;
+        font-size: 1em;
+        font-family:'Arvo', serif;
+        padding: .6em;
+        background: darkgreen;
+        box-shadow: 4px 4px 10px #666;
+    }
+    label input {
+        background-color: #f4f2ef;
+    }
+    footer {
+        background-color: darkgreen;
+        color: darkkhaki;
+        margin-top: 8%;
+        font-family:'Arvo', serif;
+        text-size-adjust: 12px;
+    }
+    /*    Gallery*/
+    .frame1 img {
+        width: 90%;
+        height: auto;
+    }
+    img:hover {
+        box-shadow: 10px 10px 5px #888888;
+    }
+    .frame1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    /*Thank You Sheet*/
+    h2 {
+        text-align: center;
+        margin: 10%;
+        font-size: 310%;
+        color: white;
+        padding: 2%;
+    }
+    #rectangle {
+        z-index: 0;
+        margin: auto;
+        width: 600px;
+        height: 500px;
+        background-color: darkgreen;
+    }
+}

@@ -1,63 +1,52 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A place were we can report the weather condition.">
+        <meta name="author" content="Lynnda Robinson">
 
-<head>
-    <title>Lesson 8 - Weather Site | Lynnda Robinson </title> 
+        <title>Lesson 8 - Weather Site|Lynnda Robinson</title>
 
-    <meta charset="utf-8">
+        <!-- TELLS MOBILE DEVICE ABOUT THEIR WIDTH -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Assignment, Storm Center where you can report storms.">
+        <!-- STYLE SHEETS -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="styles/small-8.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="styles/medium-8.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="styles/large-8.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-    <link rel="stylesheet" href="styles/normalize.css">
-
-    <link rel="stylesheet" href="styles/small-9.css" />
-
-    <link rel="stylesheet" href="styles/medium-9.css" />
-
-    <link rel="stylesheet" href="styles/large-9.css" />
-
-    <script type="text/javascript" src="scripts/windchill.js"></script>
-
-
-    <script type="text/javascript">
-        function outputUpdate(vol) {
-            document.querySelector('#volume').value = vol;
-        }
-    </script>
-
-
-</head>
+    <body>
+    <!-- HEADER -->
+        <header class="clearfix">
+        <h1>The Wild and Wacky Weather</h1>
+            <h3>Where All Your Weather Needs Are Met</h3>
+           
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        </header>
 
 
-<body>
-    <header>
-        <h1>The Wild and Wacky Weather </h1>
-    </header>
-
-    <div class="topnav">
+    <!-- NAVIGATION -->
         <nav class="clearfix">
-            <button onclick="myFunction()">&#9776;</button>
-
-            <ul id="primaryNavigation" class="hide">
+            <ul class="navigation">
                 <li><a href="../index.html">Home</a></li>
-
-                <li><a href="preston-7.html">Preston</a></li>
-
-                <li><a href="sodaspring.html">Soda Springs</a></li>
-
-                <li><a href="fishhaven.html">Fish Haven</a></li>
-
-                <li><a class="active" href="stormcenter">Storm Center</a></li>
-
-                <li><a href="gallery-7.html">Gallery</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><class="active"><a href="Gallery"</a></li>
             </ul>
         </nav>
-    </div>
 
     <main>
-        <form action="http://thanks.html" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+        <form action="http://thankyou.html"
 
             <br>
 
@@ -67,13 +56,13 @@
 
                 <label><span>Full Name:</span></label><input name="Fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z\s-_] {3,99}" required>
 
-                <label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]${3,99}" required=""></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="icefish@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]${3,99}" required=""></label>
 
-                <!--                <label><span>Email:</span></label><input name="email" type="email" value="" placeholder="zen@gmail.com" pattern="[a-zA-Z-_] {3,99}" required>-->
+                <!--                <label><span>Email:</span></label><input name="email" type="email" value="" placeholder="icefish@gmail.com" pattern="[a-zA-Z-_] {3,99}" required>-->
 
-                <label><span>Phone:</span></label><input name="phone" type="tel" value="" placeholder="1239781234" pattern="[0-9] {1-,2-}" required>
+                <label><span>Phone:</span></label><input name="phone" type="tel" value="" placeholder="2205551212" pattern="[0-9] {1-,2-}" required>
 
-                <label><span>Zip:</span></label><input name="zip" type="text" value="" placeholder="67888" pattern="[0-9]{5}" required>
+                <label><span>Zip:</span></label><input name="zip" type="text" value="" placeholder="97645" pattern="[0-9]{5}" required>
             </fieldset>
             <br>
             <fieldset>
@@ -84,6 +73,7 @@
                 <br><br> Storm Type:<input list="stormtype" name="stormtype" required>
                 <datalist id="stormtype">
   <option value="Flash Flood">
+  <option value="Hail">
   <option value="Hurricane">
   <option value="Thunderstorm">
   <option value="Tornado">
@@ -103,9 +93,9 @@
 
                 <br>
                 <br> Select Location: <select name="location">
-    <option value="Franklin">Franklin</option>
-    <option value="Greenville">Greenville</option>
-    <option value="Springville" selected>Springfield</option>
+    <option value="Preston">Preston</option>
+    <option value="SodaSprings">Soda Springs</option>
+    <option value="FishHaven" selected>Fish Haven</option>
     </select>
                 <!--                <p>The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>-->
                 <br><br> Is there danger?
@@ -150,9 +140,10 @@ Please list your comments here.
     </main>
 
     <footer>
-        <p>&copy; 2017 - Laura Mower - Location: New Hampshire <a href="http://www.byui.edu/online">BYU-Idaho</a> &nbsp;|| &nbsp; <span id="demo"></span></p>
-    </footer>
-
+            <div class="wrapper">
+               <p id="footend-copy">&copy; 2019 | The Wild and Wacky Weather |<span id="currentdate"><p id="demo">Monday, April 6, 2020</p></span>
+           </div>
+           </footer> 
 
 
     <script type="text/javascript" src="scripts/responsiveMenu.js" defer></script>
