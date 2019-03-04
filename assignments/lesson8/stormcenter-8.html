@@ -40,8 +40,8 @@
                 <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="active">Storm Center</a></li>
-                <li><a href="Gallery">Gallery</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
 
@@ -54,15 +54,17 @@
             <fieldset>
                 <legend><span>Personal Information</span></legend>
 
-                <label><span>Full Name:</span></label><input name="Fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z\s-_] {3,99}" required>
+               <label>Full Name:</label>
+               <input type="text" placeholder="Enter your Full Name" required>
 
-                <label><span>Email:</span><input name="email" type="email" value="" placeholder="icefish@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]${3,99}" required=""></label>
+               <label>Email:</label>
+               <input type="text" placeholder="Enter your Email">
 
-                <!--                <label><span>Email:</span></label><input name="email" type="email" value="" placeholder="icefish@gmail.com" pattern="[a-zA-Z-_] {3,99}" required>-->
+               <label>Phone:</label>
+               <input type="text" placeholder="Enter your Phone Number" required>
 
-                <label><span>Phone:</span></label><input name="phone" type="tel" value="" placeholder="2205551212" pattern="[0-9] {1-,2-}" required>
-
-                <label><span>Zip:</span></label><input name="zip" type="text" value="" placeholder="97645" pattern="[0-9]{5}" required>
+                <label>Zip Code:</label>
+                <input type="text" placeholder="Enter your Zip Code" required>
             </fieldset>
             <br>
             <fieldset>
@@ -82,9 +84,6 @@
 
                 <br><br>
 
-
-                <!--                <p> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>-->
-
                 <label>Storm Severity (Ranging 1-10):</label>
                 <input type="range" min="1" max="10" value="10" id="severity" step="1" oninput="outputUpdate(value)">
 
@@ -92,10 +91,11 @@
 
 
                 <br>
-                <br> Select Location: <select name="location">
+                <br> Select: <select name="select">
+    <option value="SelectRegion"selected>Select Region</option>                
     <option value="Preston">Preston</option>
     <option value="SodaSprings">Soda Springs</option>
-    <option value="FishHaven" selected>Fish Haven</option>
+    <option value="FishHaven">Fish Haven</option>
     </select>
                 <!--                <p>The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>-->
                 <br><br> Is there danger?
