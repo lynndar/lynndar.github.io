@@ -35,13 +35,13 @@
 
     <!-- NAVIGATION -->
         <nav class="clearfix">
-            <ul class="navigation">
-                <li><a href="../index.html">Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
+            <ul class="navigation" id="mainmenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../preston-7/preston-7.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../../preston-7/gallery-7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
 
@@ -62,7 +62,7 @@
 
                <label>Phone:</label>
                <input type="text" placeholder="Enter your Phone Number" required>
-
+              
                 <label>Zip Code:</label>
                 <input type="text" placeholder="Enter your Zip Code" required>
             </fieldset>
@@ -71,7 +71,6 @@
                 <legend><span>Storm Information</span></legend>
                 Date:<input type="date" name="bday" required>
 
-                <!--                <p> type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>-->
                 <br><br> Storm Type:<input list="stormtype" name="stormtype" required>
                 <datalist id="stormtype">
   <option value="Flash Flood">
@@ -97,32 +96,12 @@
     <option value="SodaSprings">Soda Springs</option>
     <option value="FishHaven">Fish Haven</option>
     </select>
-                <!--                <p>The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>-->
+       
                 <br><br> Is there danger?
                 <br>
                 <input type="radio" name="answer" value="Yes" checked> Yes<br>
                 <input type="radio" name="answer" value="No">No<br>
                 <input type="radio" name="answer" value="Maybe">Maybe<br></fieldset>
-
-
-            <!-- if you have more than one radio
-            <form>
-    <fieldset id="group1">
-        <input type="radio" value="">
-        <input type="radio" value="">
-    </fieldset>
-
-    <fieldset id="group2">
-        <input type="radio" value="">
-        <input type="radio" value="">
-        <input type="radio" value="">
-    </fieldset>
-</form>
--->
-
-
-            <!--                <p><b>Note:</b> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>-->
-
 
             <br>
             <fieldset>
@@ -134,7 +113,7 @@ Please list your comments here.
             <br>
             <br>
 
-            <input type="submit" value="Submit" class="submitBtn" formaction="thanks.html">
+            <input type="submit" value="Submit" class="submitBtn" formaction="thankyou.html">
 
         </form>
     </main>
