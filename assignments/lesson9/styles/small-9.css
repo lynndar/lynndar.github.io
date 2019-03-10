@@ -1,0 +1,251 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+  /*PREVENTING PICTURES FROM OVERLAPPING*/
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  .clearfix:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+  img.row{width: 30%; height: auto; margin: 0;}
+
+  
+   /*----------- BODY --------------*/
+   body {
+    font-size: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: white;
+    height: 25%;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: 0.5rem 2%;
+    background-color:khaki;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    color: darkkhaki;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+header h3 {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    color: darkkhaki;
+    text-align: center;
+    font-family:'Arvo', serif;
+    text-shadow: 2px 2px black;
+}
+
+header .hamburger {
+    position: relative;
+    float: right;
+}
+
+.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: darkkhaki;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: darkkhaki;
+    color: darkgreen;
+    border-left: 1px solid khaki;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: darkkhaki;
+    color: darkolivegreen;
+}
+nav ul li.active a {
+    background-color: darkolivegreen;
+    color: khaki;
+}
+
+/*------ HAMBURGER ------*/
+* {
+    margin: 0;
+}
+
+header {
+    background-color: darkgreen;
+}
+
+h1 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    padding: 0.5rem;
+}
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.navigation li {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+.navigation.responsive {
+    position: relative;
+}
+.navigation.responsive li {
+    background-color: khaki;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid darkgreen;
+}
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation.responsive li a:hover {
+    background-color: khaki
+}
+}
+
+@media only screen and (min-width: 37.5em) {
+
+h1 {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    background-color: darkkhaki;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+.navigation a {
+    display: block;
+    color: darkgreen;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: darkolivegreen;
+}
+}
+
+  /*HOME PAGE MAIN*/
+  #townInfo {
+  
+      padding: 20px 20px 20px 20px;
+      display: flex;
+      margin: 20 ;
+  
+  }
+
+  main {
+    position: relative;
+    bottom: 15px;
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+main h1 {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: darkolivegreen
+}
+
+  /*----------- FOOTER --------------*/
+.contactinfo {
+    width: 35%;
+    margin: auto;
+    height: 250px;
+    margin-top: 40px;
+    text-align: center;
+}
+aside {
+    color: darkgreen;
+    background-color: darkkhaki;
+    padding: 0.5em;
+    text-align: center;
+    height: -150px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.map {
+    width:200px;
+    float: center;
+    box-align: center;
+    padding-right: 0px;
+    padding-top: -280px;
+    margin: 0px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;    
+}
+.footer-bar {
+    width: 100%;
+    padding: 60px 0px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    text-align: center;
+}
+footer {
+    background-color:darkgreen;
+    color: darkkhaki;
+    text-align: center;
+    width: inherit;
+    height: 25%;
+    padding: .5rem 2%;
+    font-family:'Arvo', serif;
+    font-size: 14px; 
+}
