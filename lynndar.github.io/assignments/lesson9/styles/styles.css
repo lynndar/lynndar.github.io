@@ -1,0 +1,77 @@
+/* || general styles */
+
+html {
+    background-color: white;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1em;
+    text-shadow: 4px black;
+}
+
+h2 {
+    font-family: 'Wallpoet', cursive;
+    letter-spacing: 1em;
+}
+/* header styles */
+
+h1 {
+    border: 5px solid darkkhaki;
+    background-color: darkolivegreen;
+    color: darkkhaki;
+    font-size: 4rem;
+    text-align: center;
+    border-radius:  38px 38px 38px 38px;
+    box-shadow: 10px 10px 5px 0px black ;
+}
+
+header p {
+    font-family: 'Wallpoet', cursive;
+    color: darkkhaki;
+    text-shadow: 2px 2px black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section styles */
+
+section article {
+    background-color: white;
+    display: inline-grid;
+    padding: 5px;
+    margin: 25px;
+    border: 10px solid darkolivegreen;
+    border-radius: 2em;
+    width: 33%;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 4px 4px black;
+
+}
+
+section p {
+    color: black;
+    margin: 5px 0;
+}
+
+section ul {
+    color: black;
+    margin-top: 0;
+}
+
+h2 {
+    text-align: center;
+    color: darkkhaki;
+    text-shadow: 2px 5px 7px black;
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
