@@ -1,0 +1,211 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+@media only screen and (max-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+   
+   /*nav button { display:none; }   hamburger button does not need to be shown */
+    
+    main div.container{ display: none; } 
+    
+    article p.town-article img { width: 25%; float:right; }  /* responsive images */
+  
+    footer {width: 25%;}
+         
+    .dailytemp{ width: 10%; height:auto; margin: 1em}
+    .logo{width: 10vw; height:auto; margin: 0; float: left}
+    
+    img.row{width: 30%; height: auto; margin: 0;}
+  }
+  
+  table.forecast{min-width: 200px;}
+  
+  /*PREVENTING PICTURES FROM OVERLAPPING*/
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  .clearfix:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+ 
+  
+  body {
+    font-size: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: white;
+    margin: 1em;
+    }
+  
+  header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  }
+  
+  /*----------- HEADER --------------*/
+  header {
+    padding: 0.5rem 2%;
+    background-color:khaki;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    color: darkkhaki;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+header h3 {
+    margin: 0;
+    font-weight: normal;
+    color: darkkhaki;
+    text-align: center;
+    font-family:'Arvo', serif;
+    text-shadow: 2px 2px black;
+}
+
+header .hamburger {
+    position: relative;
+    float: right;
+}
+
+.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+  
+
+
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.navigation li {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+.navigation.responsive {
+    position: relative;
+}
+.navigation.responsive li {
+    background-color: khaki;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid darkgreen;
+}
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.navigation.responsive li a:hover {
+    background-color: khaki
+}
+}
+
+@media only screen and (min-width: 37.5em) {
+
+h1 {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    background-color: darkkhaki;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+.navigation a {
+    display: block;
+    color: darkgreen;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: darkolivegreen;
+}
+
+}
+  article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 33%; /* fill the page in the small/phone view */
+    height: auto;
+    margin: 0;
+  }
+  
+  
+  /*----------- FOOTER --------------*/
+.contactinfo {
+    width: 35%;
+    margin: auto;
+    height: 250px;
+    margin-top: 40px;
+    text-align: center;
+}
+aside {
+    color: darkgreen;
+    background-color: darkkhaki;
+    padding: 0.5em;
+    text-align: center;
+    height: -150px;
+    font-family:'Arvo', serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+  
+  /*------- Map Iframe -------*/
+  .map {
+    width:200px;
+    float: center;
+    box-align: center;
+    padding-right: 0px;
+    padding-top: -280px;
+    margin: 0px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;    
+}
+
+footer {
+    background-color:darkgreen;
+    color: darkkhaki;
+    text-align: center;
+    width: inherit;
+    height: 25%;
+    padding: .5rem 2%;
+    font-family:'Arvo', serif;
+    font-size: 14px; 
+}
+  
+  
+  
+  
+  
+  
+  /*HOME PAGE MAIN*/
+  #townInfo {
+  
+      padding: 10px 10px 10px 10px;
+      display: flex;
+      margin: 0 auto;
+  
+  }

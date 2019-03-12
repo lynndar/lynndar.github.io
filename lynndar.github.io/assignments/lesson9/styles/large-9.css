@@ -1,0 +1,84 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    article p.town-article img { width: 29.333%; }
+      
+      /*img{width: 30em; height: auto; margin: 0}*/
+              
+      .logo{width: 10vw; height:auto; padding: 1px; float: left}
+      .dailytemp{ width: 10%; height:auto; margin: 1em}
+  } 
+  header{
+      font-size:2vw;
+      background-color: darkgreen;
+     
+      
+  }
+  
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+  }
+  
+  
+  /* WEATHER CONDITIONS*/
+      main section table {
+          text-align: center;
+          display: block;
+          width: 100%;
+      }
+      main section .data{
+          color: darkolivegreen;
+          background-color:darkkhaki;
+          font-size: 20px;
+          }	
+      span {
+          font-weight: bold;
+      }
+  
+  /*NAVIGATION BAR*/
+      /* Add a black background color to the top navigation */
+      .topnav {
+          background-color:darkkhaki;
+          overflow: hidden;
+      }
+      /* Style the links inside the navigation bar - Color of font*/
+      .topnav a {
+          float: left;
+          color: purple;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+      }
+      /* Change the color of links on hover */
+      .topnav a:hover {
+          background-color: darkolivegreen;
+          color: black;
+      }
+      /* Add a color to the active/current link */
+      .topnav a.active {
+          background-color: #FFF8DC;
+          color: black;
+      }
+  
+  
+  /*HOME PAGE TABLE*/
+      .indexpics:hover {box-shadow: 5px 5px 10px gray;}
+      #townInfo {
+      display:inline block;
+      flex-wrap: wrap;
+      }
+      #townInfo article {
+      
+      border:2px solid darkgreen;
+      margin: 5px;
+      text-align: center;
+      }
+      #townInfo img{
+      vertical-align: middle;
+      max-height:35vw;
+      }
+  

@@ -36,7 +36,6 @@ html {
     header h3 {
         margin: 0;
         font-weight: normal;
-        text-align: center;
         color: darkkhaki;
         text-align: center;
         text-shadow: 2px 2px black;
@@ -180,6 +179,42 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
+main {
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}
+.countyWeather {
+    font-size: 2em;
+    color: #121010;
+    text-align: center;
+}
+._weather{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+._weather article {
+    border-color: #6ddff4;
+    max-width: 20em;
+}
+._weather article img {
+    max-width: 20rem;
+}
+#fr_weather article {
+    width: 35rem;
+    padding: 0px;
+    margin-bottom: 15px;
+    border: 0px;
+    font-weight: 700;
+    align-items: center;
+}
+#fr_weather article p {
+    padding: 0px;
+    margin: 0px;
+}
 
 main h1 {
     display: block;
@@ -189,31 +224,6 @@ main h1 {
     color: darkolivegreen
 }
 
-main .prestonsummary {
-    bottom: 20px;
-    text-align: left;
-    position: relative;
-    bottom: 20px;
-    background-color:darkgreen;
-    padding: 10px;
-    line-height: 0.5em;
-    position: absolute;
-    width: 270px;
-    height: 200px;
-    left: 20px;
-    top: 40px;
-    float: inherit;
-    z-index: 1;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
-    font-family:'Arvo', serif;
-    font-size: 16px; color: darkkhaki;
-    }
-
-
-main .forecast {
-    visibility: hidden;
-}
 
 main picture.myphoto {
     width: 50%;
