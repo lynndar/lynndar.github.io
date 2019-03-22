@@ -1,150 +1,120 @@
-<!doctype html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="page description placeholder">
-        <meta name="author" content="Lynnda Robinson">
-
-        <title>Lesson 10 - Weather Site|Lynnda Robinson</title>
-
-        <!-- TELLS MOBILE DEVICE ABOUT THEIR WIDTH -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <!-- STYLE SHEETS -->
-        <link href="styles/normalize.css" rel="stylesheet">
-        <!-- phone-default -->
-        <link href="styles/small-10.css" rel="stylesheet">
-        <!-- enhance-tablet -->
-        <link href="styles/medium-10.css" rel="stylesheet">
-        <!-- enhance-desktop -->
-        <link href="styles/large-10.css" rel="stylesheet">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
-
-    </head>
-
-    <body>
-    <!-- HEADER -->
-        <header class="clearfix">
-        <h1>The Wild and Wacky Weather</h1>
-            <h3>Where All Your Weather Needs Are Met</h3>
-            <figure class="logo">
-                <img src="images/logo-100.jpg" alt="mylogo">
-            </figure>
-            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-        </header>
-
-
-    <!-- NAVIGATION -->
-        <nav class="clearfix">
-            <ul class="navigation">
-                <li><a href="../../assignments/lesson9/home.html">Home</a></li>
-                <li class="active"><a href="../../assignments/lesson10/preston-10.html">Preston</a></li>
-                <li><a href="sodasprings-7.html">Soda Springs</a></li>
-                <li><a href="fishhaven-7.html">Fish Haven</a></li>
-                <li><a href="../../assignments/lesson8/stormcenter-8.html">Storm Center</a></li>
-                <li><a href="../../assignments/lesson7/gallery-7.html">Gallery</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 - Weather Site   </title>
+    <meta name="description" content="Weather page for Preston, Idaho">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small-10.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium-10.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
+</head>
+<body>
+    <header>
+        <picture class="headerItem">
+            <source srcset="images/logo.jpg" media="(min-width: 731px)">
+            <img id="logo" src="images/logo-100.jpg" alt="My Logo"/>
+        </picture>
+        <div class="headerItem">
+            <h1>The Wild and Wacky Weather</h1>
+            <div class="motto">
+                <p>Where All Your Weather Needs Are Met</p>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                <button>&#9776;</button>
+                <p>MENU</p>
+            </div>
+                <ul class="hide" id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="currentPage"><a href="preston-10.html">Preston</a></li>
+                    <li><a href="sodaSprings/">Soda Springs</a></li>
+                    <li><a href="fishHaven/">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
         </nav>
-
-
-    <!-- CONTENT -->
-        <main>
-            <h1>The Town of Preston</h1>
-            <img src="images/bluesky.jpg" alt="bluesky" width="100%">
-            <section class="prestonsummary">
-                    <div class="weathersummary">
-                            <h3>Weather Summary</h3>
-                            <br>
-                            <br>
-                            <br>
-                            <div class="weatherdetails">
-                            <p class="label">Currently: Sunny</p>
-                            <br>
-                            <br>
-                            <p class="label">Temperature: 73&deg;F</p>
-                            <br>
-                            <br>
-                            <p class="label">Humidity: 2%</p>
-                            <br>
-                            <br>
-                            <p class="label">Precipitation: 0</p>
-                            <br>
-                            <br>
-                            <p class="label">WindSpeed: 10mph</p>
-                            <br>
-                            <br>
-                            <p class-"label">Wind Chill: 74.54&deg;F</p>
-                                    
-                            </div>  
-                    </div>
-                    </section>
-
-            <article>
-                
-                <h3>Preston's Fun Day</h3>
-                <p class="town-news">
-                    <img src="images/people.jpg" alt="town-news" width="45%" height="35%">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum tincidunt lacus, 
-                    id ultricies est venenatis eu. Nunc scelerisque semper congue. Proin fermentum libero eros, 
-                    sit amet maximus felis malesuada ac. Cras ullamcorper varius viverra. Mauris ullamcorper, 
-                    sapien ac dignissim vehicula, nunc sapien dignissim nisi, eu eleifend tellus diam quis risus. 
-                    In pretium elit ut diam mollis, eget tempor lectus fermentum. Ut ut placerat nulla. Duis sollicitudin 
-                    ante quis lectus hendrerit, id imperdiet enim efficitur. 
-                    Donec euismod commodo hendrerit. Curabitur pulvinar nunc eu leo aliquet.
-                </p>
-            </article>
-
-        </main>
-
-
-        <section id="forcast">
-            <h2>5 Day Forcast</h2>
-            <ul id="days">
-                <li id="day1">Day 1</li>
-                <li id="day2">Day 2</li>
-                <li id="day3">Day 3</li>
-                <li id="day4">Day 4</li>
-                <li id="day5">Day 5</li>
-                <li id="weather1"><img src="images/partlycloudy.jpg" alt="cloudy"></li>
-                <li id="weather2"><img src="images/rain.jpg" alt="rain"></li>
-                <li id="weather3"><img src="images/wind.jpg" alt="windy"></li>
-                <li id="weather4"><img src="images/storm.jpg" alt="stormy"></li>
-                <li id="weather5"><img src="images/sunny.jpg" alt="sunny"></li>
-            </ul>
+    </div>
+    <main>
+        <section>
+            <h2 class="pageTitle">Preston Township</h2>    
+            <div id="bluesky">  
+                <picture>
+                    <source srcset="images/bluesky-300.jpg" media="(min-width: 731px)">
+                    <img id="sky" src="images/bluesky-100.jpg" alt="sunny day"/>
+                </picture> 
+                <div id="weatherbox">
+                    <h4>Weather Summary</h4>
+                    <p>Currently: <span id="current"></span></p>
+                    <p>High: <span id="highTemp"></span>&#176; F</p>
+                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
+                    <p>Humidity: <span id="humidity"></span>&#37;</p>
+                    <p>Wind Speed: <span id="speed"></span> mph</p>
+                </div>
+            </div> 
         </section>
 
-
-
-<!-- FOOTER -->
-<section class="contactinfo">
-</section>
-<aside>
-    <div class="wrapper">
-        <p>The Wild and Wacky Weather</p>
-        <p>333 Overthetop St.</p>
-        <p>Preston, ID 92374</p>
-        <p>555-1212</p>
-        <p>wwweather@gmail.com</p>
-        <br>
-        <br>
-        <img src="images/prestonmap-100.jpg" alt="map of Preston, ID" class="map">
-        <box-shadowing:5px 0 5px 0;    
-    </div>        
-</aside>
-    <footer>
-        <div class="wrapper">
-            <p id="footend-copy">&copy; 2019 | The Wild and Wacky Weather | <span id="currentdate"><p id="demo">Monday, April 6, 2020</span></p>
+        <div class="hidden, fiveDay">
+            <h4 class="hidden" id="forecastTitle">5 Day Forecast</h4>
+            <div class="hidden" id="forecast">
+                <section id="dailyForecast"></section>  
+            </div>
         </div>
+
+        <section class="townSection">
+            <h3>Town Events</h3>
+            <div id="events"></div>
+        </section>
+      
+        <article class="articleBox">
+            <h3 id="articleTitle">Preston's Fun Day</h3>
+            <h5 id="authorByline">by John Doe</h5>
+            <picture>
+                <source srcset="images/people.jpg" media="(min-width: 731px)">
+                <img id="articlePic" src="images/people-100.jpg" alt="people of preston>
+            </picture>
+            <p id="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed 
+                arcu non odio. Aliquam ultrices sagittis orci a. In dictum non consectetur a 
+                erat nam at lectus. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. 
+                Massa eget egestas purus viverra accumsan in. Ac tortor vitae purus faucibus ornare 
+                suspendisse sed nisi lacus. Viverra suspendisse potenti nullam ac tortor vitae. 
+                Sed ullamcorper morbi tincidunt ornare. Augue mauris augue neque gravida in fermentum et 
+                sollicitudin ac. Euismod nisi porta lorem mollis aliquam ut. Integer quis auctor elit sed 
+                vulputate.</p>
+        </article>
+
+        <div id="contactArea">
+                <div id="columns">
+                    <div id="column1">
+                        <p>The Wild and Wacky Weather</p>
+                        <p>333 Overthetop St.</p>
+                        <p>Preston, ID 92374</p>
+                        <p>555-1212</p>
+                        <p>wwweather@gmail.com</p>
+                    </div>
+                </div>
+                <picture>
+                    <source srcset="images/prestonmap.jpg" media="(min-width: 731px)">
+                    <img id="PrestonMap" src="images/prestonmap-100.jpg" alt="Map of Preston Area"/>
+                </picture>
+        </div>
+    </main>
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 The Wild and Wacky Weather</p>
+        <p id="attribution">Weather gathered from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
     </footer>
-
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/windchill.js"></script>
-
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/townHelper.js"></script>
+    <script src="scripts/Preston.js"></script>
 </body>
 </html>

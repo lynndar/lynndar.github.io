@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="page description placeholder">
+        <meta name="author" content="Lynnda Robinson">
+        <meta name="description" content="Local weather and forecasts.">
+        <title>Lesson 9 - Weather Site|Lynnda Robinson</title>
+
+        <!-- TELLS MOBILE DEVICE ABOUT THEIR WIDTH -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- STYLE SHEETS -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link rel="stylesheet" href="styles/small-9.css"/>
+        <!-- enhance-tablet -->
+        <link rel="stylesheet" href="styles/medium-9.css"/>
+        <!-- enhance-desktop -->
+        <link rel="stylesheet" href="styles/large-9.css"/>
+        <!-- Google Fonts -->
+        <link rel="stylesheet href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
+
+    </head>
+<body>
+        <header>
+            <picture class="headerItem">
+                <source srcset="images/logo.jpg" media="(min-width: 731px)">
+                <img id="logo" src="images/logo-100.jpg" alt="Neighborhood Weather Logo"/>
+            </picture>
+            <div class="headerItem">
+                <h1>The Wild and Wacky Weather</h1>
+                <div class="motto">
+                    <p></p>Where All Your Weather Needs Are Met
+                </div>
+            </div>
+        </header>
+        <div>
+            <nav class="topnav">
+                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                    <button>&#9776;</button>
+                    <p>MENU</p>
+                </div>
+                    <ul class="hide" id="primaryNav">
+                        <li class="currentPage"><a href="index.html">Home</a></li>
+                        <li><a href="preston-10.html">Preston</a></li>
+                        <li><a href="sodaSprings/">Soda Springs</a></li>
+                        <li><a href="fishHaven/">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+            </nav>
+        </div>
+    <main class="homePage">
+       
+        <section id="townInfo">
+
+        </section>
+    </main>
+
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 Neighborhood Weather</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/townHelper.js"></script>
+    <script src="scripts/townInfo.js"></script>
+</body>
+</html>
