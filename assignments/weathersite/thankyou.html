@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Weather</title>
+    <meta name="description" content="Weather page for Preston, Idaho">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/finalsmall.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/finalmedium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/finallarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <picture class="headerItem">
+            <source srcset="images/logo-100.jpg" media="(min-width: 731px)">
+            <img id="logo" src="images/logo-100.jpg" alt="My Logo"/>
+        </picture>
+        <div class="headerItem">
+            <h1>The Wild and Wacky Weather</h1>
+            <div class="motto">
+                <p>Where All Your Weather Needs Are Met</p>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                <button>&#9776;</button>
+                <p>MENU</p>
+            </div>
+                <ul class="hide" id="primaryNav">
+                    <li><a href="../weathersite/finalhome.html">Home</a></li>
+                    <li class="currentPage"><a href="../weathersite/finalpreston.html">Preston</a></li>
+                    <li><a href="../weathersite/finalsodasprings.html">Soda Springs</a></li>
+                    <li><a href="../weathersite/finalfishhaven.html">Fish Haven</a></li>
+                    <li><a href="../weathersite/stormcenter.html">Storm Center</a></li>
+                    <li><a href="../weathersite/gallery.html">Gallery</a></li>
+                </ul>
+        </nav>
+    </div>
+
+    <!-- CONTENT -->
+        <main>
+            <div id="thankyou" class="clearfix">
+                <p id="thanks">Thank you for Visiting!</p></br>
+                <p id="message">If it weren't for folks like yourself, we would never know what the wild and wackey weather would be.</p>
+            </div>
+        </main>
+
+    <!-- FOOTER-->
+    <footer>
+        <p id="currentdate"></p>
+        <p id="copyright">&copy; 2019 The Wild and Wacky Weather</p>
+       
+    </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+
+</html>

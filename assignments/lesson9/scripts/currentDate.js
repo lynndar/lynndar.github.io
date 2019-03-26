@@ -1,3 +1,6 @@
+
+
+
 function UpdateElementWithDate(aId) { // Main function which pulls and displays all current date information. 
     // Created in a way that it can be put in other elements besides the footer if desired.
     var date = new Date(); // Function that pulls current date information. Value given to variable for use.
@@ -41,4 +44,5 @@ return result; // Send result for month name back to variable "monthName".
 }
 
 UpdateElementWithDate("currentDate"); // Function that will start all current date processing on page load.
+
 

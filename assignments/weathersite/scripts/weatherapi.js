@@ -13,7 +13,7 @@ weatherRequest.onload = function() {
 
     document.getElementById('humidity').innerHTML = weatherData.main.humidity; // Add humidity value to Html element id 'humidity' on town homepage.
 
-    document.getElementById('windChill').innerHTML = ConvertWindChill(weatherData.main.temp, weatherData.wind.speed); // Call function ConvertWindChill and add returned value to Html element id "windChill".
+    document.getElementById('windchill').innerHTML = ConvertWindChill(weatherData.main.temp, weatherData.wind.speed); // Call function ConvertWindChill and add returned value to Html element id "windChill".
 }
 
 

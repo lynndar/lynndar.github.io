@@ -43,4 +43,4 @@ function ConvertMonthToString(aMonth) { // Function to receive month number and 
 return result; // Send result for month name back to variable "monthName".
 }
 
-UpdateElementWithDate("currentDate"); // Function that will start all current date processing on page load.
+UpdateElementWithDate("currentdate"); // Function that will start all current date processing on page load.

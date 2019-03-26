@@ -28,7 +28,7 @@ html {
 
     header h1 {
         margin: 0;
-        font-size: 45px;
+        font-size: 95px;
         color: darkkhaki;
         text-align: center;
         text-shadow: 2px 2px black;
@@ -210,7 +210,7 @@ main .prestonsummary {
     float: inherit;
     z-index: 1;
     border-radius: 35px 0px 35px 0px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 8px black;
     font-family:'Arvo', serif;
     font-size: 16px; color: darkkhaki;
   }  
@@ -284,7 +284,7 @@ aside {
     padding-top: -280px;
     margin: 0px;
     box-shadow: 5px 5px 5px black;
-    border-radius: 10px;    
+    border-radius: 196px 196px 196px 196px;
 }
 .footer-bar {
     width: 100%;

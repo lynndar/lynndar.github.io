@@ -1,131 +1,391 @@
-/* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
-
-    header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
-    }
-
-/*----------- BODY --------------*/
-
-
-
-/*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-
-
-
-/*----------- MAIN --------------*/
-   main .grid {
-        display: grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-column-gap: 140px;
-        grid-row-gap: 20px;
-
-    }
-
-    #forcast {
-        margin: auto;
-        padding: 1rem;
-        text-align: center;
-        display: block;
-        padding-top: 0;
-        margin-bottom: 4rem;
-        margin-top: 2rem;
-    }
-    h2 {
-        font-family:'Arvo', serif;
-    }
-    
-    #days {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 2.5rem;
-        grid-column-gap: .5rem;
-        font-family:'Arvo', serif;
-        color: darkgreen;
-    }
-    
-    #day1,
-    #day2,
-    #day3,
-    #day4,
-    #day5 {
-        border: 0.2rem solid darkgreen;
-        padding: 0.5rem;
-        font-weight: bold;
-        background-color: darkkhaki;
-    }
-    
-    #day1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    #day2 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
-    #day3 {
-        grid-column: 3;
-        grid-row: 1;
-    }
-    
-    #day4 {
-        grid-column: 4;
-        grid-row: 1;
-    }
-    
-    #day5 {
-        grid-column: 5;
-        grid-row: 1;
-    }
-    
-    #days li {
-        float: left;
-    }
-    
-#weather1,
-#weather2,
-#weather3,
-#weather4,
-#weather5 {
-    height: 3rem;
+/* General styling for pages */
+body {
+    background-color: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+    color: darkkhaki;
 }
 
-#weather1 {
-    grid-column: 1;
-    grid-row: 2;
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-#weather2 {
-    grid-column: 2;
-    grid-row: 2;
+h2, h3, h4 {
+    font-size: 23px;
+    font-family:'Arvo', serif;
 }
 
-#weather3 {
-    grid-column: 3;
-    grid-row: 2;
+/* Styles for header */
+header {
+    background-color: darkgreen;
+    overflow: hidden;
+    border-bottom: 3px solid darkkhaki;
+    border-top: 3px solid darkkhaki;
+    display: flex;
+    justify-content: center;
 }
 
-#weather4 {
-    grid-column: 4;
-    grid-row: 2;
+header img {
+    width: 100px;
+    margin: 15px 0px 0px 0px;
 }
 
-#weather5 {
-    grid-column: 5;
-    grid-row: 2;
+header h1 {    
+    color: darkkhaki;
+    padding: 20px 20px 0 20px;
+    font-size: 35px;   
+    text-shadow: #2e2c2a 2px 2px 7px;
+}
+
+.motto p {
+    color: darkkhaki;
+    margin-left: 90px;
+    margin-top: -10px;
+    font-family:'Arvo', serif;
+    font-size: 20px;
+    
+}
+
+.headerItem {
+    text-align: center;
+}
+
+/* Styles for nav bar */
+
+
+ul {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: darkkhaki;
+    overflow: hidden;
+    padding: 20px 5px;
+    border-bottom: 3px solid darkgreen;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav a:hover {
+    color:  khaki;
+    text-shadow: 3px 3px 6px #2e2c2a;
+} 
+
+nav a:active {
+    color: darkolivegreen;
+    text-shadow: 3px 3px 6px #2e2c2a;
+}
+
+li.currentPage {
+    text-shadow: 3px 3px 6px #d8da76;
+}
+
+#hiddenMenu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color:darkgreen;
+    font-family:'Arvo', serif;
 }
 
 
-/*----------- FOOTER --------------*/
+/* Styles for Footer */
+
+#copyright, #currentDate, #attribution {
+    color:darkgreen;
+    text-align: center;
+}
+
+footer {
+    background-color: darkkhaki;
+    overflow: hidden;
+    padding: 10px 5px;
+    border-bottom: 3px solid #2e2c2a;
+}
+
+#attribution a {
+    text-decoration: underline;
+    color:darkgreen;
+}
+
+/* Styles for Preston Weather Page */
+
+#sky {
+    width: 97%;
+    margin: 0 1.5%;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+#weatherbox {
+    background-color: darkkhaki;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    padding: 10px 30px;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+    border-radius: 82px 10px 82px 10px;
+    box-shadow: #2e2c2a 2px 2px 7px;
+}
+
+#bluesky {
+    position: relative;
+}
+
+h4 {
+    color: darkgreen;
+    text-shadow: 1px 1px 0px black;
+}
+
+.articleBox {
+    background-color: darkkhaki;
+    border: 2px solid darkgreen;
+    width: 96.7%;
+    margin: 3% 1.5%; 
+    position: relative;  
+}
+
+#articleTitle {
+    margin: 2% 2%;
+    font-size: 25px;
+    color: darkgreen;
+}
+
+#authorByline {
+    margin: 0 5%;
+    font-size: 15px;
+    color: darkgreen;
+    font-family:'Arvo', serif;
+}
+
+#articlePic {
+    width: 35%;
+    position: absolute;
+    right: 30px;
+    top: 10%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#articleBody {
+    margin: 2% 2%;
+    width: 55%;
+    text-align: left;
+    color: darkgreen;
+    font-family:'Arvo', serif;
+}
+
+#prestonmap {
+    float:left;
+    border: 2px solid #2e2c2a;
+    width: 10%;
+    margin: 0%;
+    border-radius: 196px 196px 196px 196px;
+}
+
+#contactArea {
+    background-color: darkgreen;
+    overflow: hidden;
+    border-bottom: 3px solid darkkhaki;
+    border-top: 3px solid darkkhaki;
+    padding-bottom: 10px;
+    position: relative;
+    font-family:'Arvo', serif;
+
+}
+
+#contactArea p {
+    color:darkkhaki;
+    font-family:'Arvo', serif;
     
-} /* end of media query */
+}
+
+#columns {
+    width: 40%;
+    float: right;
+    margin: 2%;
+}
+
+.fiveDay {
+    background-color: darkkhaki;
+    border: 2px solid darkgreen;
+    width: 96.7%;
+    margin: 3% 1.5%; 
+    text-align: center;
+
+}
+
+#forecast {
+    background-color:darkgreen;
+    border: 1px solid #2e2c2a;
+    width: 50%;
+    margin: 2% auto;
+    color:darkkhaki;
+}
+
+#forecastTitle {
+    margin: 2% auto;
+}
+
+#dailyForecast {
+    display: flex;
+    width: 100%;
+    
+}
+
+#dailyForecast img {
+    width: 90%;
+    border-top: 1px solid #2e2c2a;
+    
+}
+
+#dailyForecast article {
+    border: 1px solid #2e2c2a;
+    width: 20%;
+
+}
+
+#dailyForecast p {
+    font-size: 1.5em;
+    color: darkkhaki;
+}
+
+.townSection {
+    text-align: center;
+    width: 96.7%;
+    margin: 0 auto;
+    color: darkkhaki;
+    background-color: darkgreen;
+    border: 2px solid darkkhaki;
+    text-shadow: 3px 3px 8px #2e2c2a;
+}
+
+/* Styles for Weather Gallery */
+
+#weatherHeader {
+    margin-left: 20px;
+    color: red;
+}
+
+.galleryPic {
+    width: 100%;
+    border-bottom: 1px solid #2e2c2a;
+}
+
+.galleryBox {
+    width: 28%;
+    border: 1px solid #2e2c2a;
+    margin: 1em;
+}
+
+.galleryBox:hover {
+    box-shadow: 2px 2px 8px;
+}
+
+figure figcaption {
+    padding: 10px;
+}
+
+#picGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Styles for Thank-You Page */
+
+#thankyoubox {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thankyoubox h2, p {
+    text-align: center;
+}
+
+#thankyouimage img {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    display: block;
+}
+
+
+/* Styles for Storm Center Page */
+
+form {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textBox {
+    width: 99%;
+    height: 50px;
+}
+
+#shareHeading {
+    text-align: center;
+}
+
+
+/* Styles for Home Page */
+
+.homePage article {
+    width: 25%;
+    text-align: center;
+    background-color:lime;
+    margin: 20px 20px 20px 20px;
+    border: 4px solid purple;
+    box-shadow: 4px 4px 8px #2e2c2a;
+}
+
+.homePage section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+}
+
+#townTitle {
+    text-align: center;
+}
+
+.homePage section h2 {
+    color: darkblue;
+}
+
+.homePage section p {
+    width: 70%;
+    margin: 10px auto;
+}
+
+article img {
+    width: 100%; 
+}
+
+.homePage section p:nth-child(2) {
+    font-style: italic; 
+}
+
+#currentEvents {
+    text-align: center;
+}

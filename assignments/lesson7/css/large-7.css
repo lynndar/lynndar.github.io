@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Lesson 10 - Weather Site</title>
-
-    <meta name="description" content="page description placeholder">
+    <title>Preston Weather</title>
+    <meta name="description" content="Weather page for Preston, Idaho">
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet"  media="(max-width:700px)" href="css/small-10.css">
     <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium-10.css">
     <link rel="stylesheet" media="(min-width:1000px)" href="css/large-10.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo:400i%7cCinzel+Decorative:900" rel="stylesheet"/> 
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <picture class="headerItem">
-            <source srcset="images/logo-100.jpg" media="(min-width: 731px)">
-            <img id="logo" src="images/logo-100.jpg" alt="My Logo"/>
+            <source srcset="images/logo.png" media="(min-width: 731px)">
+            <img id="logo" src="images/smallLogo.png" alt="Neighborhood Weather Logo"/>
         </picture>
         <div class="headerItem">
-            <h1>The Wild and Wacky Weather</h1>
+            <h1>Neighborhood Weather</h1>
             <div class="motto">
-                <p>Where All Your Needs Are Met</p>
+                <p>Today's weather - special delivery</p>
             </div>
         </div>
     </header>
-
     <div>
         <nav class="topnav">
             <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
@@ -46,17 +42,17 @@
     </div>
     <main>
         <section>
-            <h2 class="pageTitle">Preston Township</h2>    
-            <div id="bluesky">  
+            <h2 class="pageTitle">Preston</h2>    
+            <div id="bigImage">  
                 <picture>
-                    <source srcset="images/bluesky.jpg" media="(min-width: 731px)">
-                    <img id="sky" src="images/bluesky-100.jpg" alt="Beautiful sky"/>
+                    <source srcset="images/skyLarge.jpg" media="(min-width: 731px)">
+                    <img id="sky" src="images/skySmall.jpg" alt="Beautiful sky"/>
                 </picture> 
                 <div id="weatherbox">
                     <h4>Weather Summary</h4>
                     <p>Currently: <span id="current"></span></p>
                     <p>High: <span id="highTemp"></span>&#176; F</p>
-                    <p>Wind Chill: <span id ="windchill"></span>&#176; F</p>
+                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
                     <p>Humidity: <span id="humidity"></span>&#37;</p>
                     <p>Wind Speed: <span id="speed"></span> mph</p>
                 </div>
@@ -76,48 +72,46 @@
         </section>
       
         <article class="articleBox">
-            <h3 id="articleTitle">Preston's Fun Day</h3>
-            <h5 id="authorByline">by John Doe</h5>
+            <h3 id="articleTitle">Article Title</h3>
+            <h5 id="authorByline">by author</h5>
             <picture>
-                <source srcset="images/people.jpg" media="(min-width: 731px)">
-                <img id="articlePic" src="images/people-100.jpg" alt="people at picnic"/>
+                <source srcset="images/lightningLarge.jpg" media="(min-width: 731px)">
+                <img id="articlePic" src="images/lightningSmall.jpg" alt="lightning in darkened sky"/>
             </picture>
-            <p id="articleBody">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Morbi euismod turpis quis neque semper porta. 
-                Mauris at nisi massa. Morbi varius egestas sagittis. 
-                Vestibulum condimentum nulla at libero feugiat, sit 
-                amet efficitur leo fringilla. Duis ut pretium leo. 
-                Aliquam vulputate odio et lorem suscipit dignissim. 
-                Nam tincidunt luctus purus vitae finibus. Integer 
-                consequat, nulla faucibus maximus lobortis, tellus 
-                odio mattis tellus, id cursus lacus augue at metus. 
-                Donec lobortis dui sit amet diam consequat consequat. 
-                Praesent leo sapien, aliquam sit amet libero ac, 
-                lobortis pellentesque dolor. Morbi convallis tellus 
-                at leo dignissim porttitor. Duis molestie mi a tortor 
-                pretium, ac. </p>
+            <p id="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed 
+                arcu non odio. Aliquam ultrices sagittis orci a. In dictum non consectetur a 
+                erat nam at lectus. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. 
+                Massa eget egestas purus viverra accumsan in. Ac tortor vitae purus faucibus ornare 
+                suspendisse sed nisi lacus. Viverra suspendisse potenti nullam ac tortor vitae. 
+                Sed ullamcorper morbi tincidunt ornare. Augue mauris augue neque gravida in fermentum et 
+                sollicitudin ac. Euismod nisi porta lorem mollis aliquam ut. Integer quis auctor elit sed 
+                vulputate.</p>
         </article>
 
         <div id="contactArea">
-            <div class="wrapper">
-                <p>The Wild and Wacky Weather</p>
-                <p>333 Overthetop St.</p>
-                <p>Preston, ID 92374</p>
-                <p>555-1212</p>
-                <p>wwweather@gmail.com</p>
+                <div id="columns">
+                    <div id="column1">
+                        <p>Company Name</p>
+                        <p>Company Address</p>
+                        <p>Company 2nd line Address</p>
+                    </div> 
+                    <div id="column2">
+                        <p>Company Phone Number</p>
+                        <p>Company Email Address</p>
+                        <p>Company Info</p>
                     </div>
                 </div>
                 <picture>
-                    <source srcset="images/prestonmap-100.jpg" media="(min-width: 731px)">
-                    <img id="prestonmap" src="images/prestonmap-100.jpg" alt="Map of Preston Area"/>
+                    <source srcset="images/map.jpg" media="(min-width: 731px)">
+                    <img id="PrestonMap" src="images/mapSmall.jpg" alt="Map of Preston Area"/>
                 </picture>
         </div>
     </main>
     <footer>
-        <p id="currentdate"></p>
-        <p id="copyright">&copy; 2019 The Wild and Wacky Weather</p>
-        <p id="attribution">Weather data gathered from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 Neighborhood Weather</p>
+        <p id="attribution">Updated weather data gathered from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>

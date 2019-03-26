@@ -176,13 +176,13 @@ aside {
   /*------- Map Iframe -------*/
   .map {
     width:200px;
-    float: center;
+    float: left;
     box-align: center;
     padding-right: 0px;
     padding-top: -280px;
     margin: 0px;
     box-shadow: 5px 5px 5px black;
-    border-radius: 10px;    
+    border-radius: 200px 200px 200px 200px;   
 }
 
 footer {

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Weather</title>
-    <meta name="description" content="Weather page for Preston, Idaho">
+    <title>Fish Haven Weather</title>
+    <meta name="description" content="Weather page">
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet"  media="(max-width:700px)" href="css/finalsmall.css">
     <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/finalmedium.css">
@@ -42,17 +42,17 @@
     </div>
     <main>
         <section>
-            <h2 class="pageTitle">Preston</h2>    
+            <h2 class="pageTitle">Fish Haven</h2>    
             <div id="bigImage">  
                 <picture>
-                    <source srcset="images/bluesky.jpg" media="(min-width: 731px)">
-                    <img id="sky" src="images/bluesky-100.jpg" alt="Beautiful sky"/>
+                    <source srcset="images/fishhavenlodging.jpg" media="(min-width: 731px)">
+                    <img id="sky" src="images/fishhavenlodging-100.jpg" alt="Fish Haven's Lodging"/>
                 </picture> 
                 <div id="weatherbox">
                     <h4>Weather Summary</h4>
                     <p>Currently: <span id="current"></span></p>
                     <p>High: <span id="highTemp"></span>&#176; F</p>
-                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
+                    <p>Wind Chill: <span id ="windchill"></span>&#176; F</p>
                     <p>Humidity: <span id="humidity"></span>&#37;</p>
                     <p>Wind Speed: <span id="speed"></span> mph</p>
                 </div>
@@ -75,8 +75,8 @@
             <h3 id="articleTitle">Article Title</h3>
             <h5 id="authorByline">by John Doe</h5>
             <picture>
-                <source srcset="images/people.jpg" media="(min-width: 731px)">
-                <img id="articlePic" src="images/people-100.jpg" alt="people having a picnic"/>
+                <source srcset="images/fishhavenfishing.jpg" media="(min-width: 731px)">
+                <img id="articlePic" src="images/fishhavenfishing-100.jpg" alt="Fishing in Fish Haven"/>
             </picture>
             <p id="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed 
@@ -99,8 +99,8 @@
                     </div> 
                     
                 <picture>
-                    <source srcset="images/prestonmap-100.jpg" media="(min-width: 731px)">
-                    <img id="map" src="images/prestonmap-100.jpg" alt="Map of Preston Area"/>
+                    <source srcset="images/fishhavenmap.jpg" media="(min-width: 731px)">
+                    <img id="map" src="images/fishhavenmap.jpg" alt="Map of Area"/>
                 </picture>
         </div>
     </main>
@@ -109,11 +109,12 @@
         <p id="copyright">&copy; 2019 The Wild and Wacky Weather</p>
         <p id="attribution">Weather data gathered from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
     </footer>
+    
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/townHelper.js"></script>
-    <script src="scripts/Preston.js"></script>
+    <script src="scripts/fishhaven.js"></script>
 </body>
 </html>
