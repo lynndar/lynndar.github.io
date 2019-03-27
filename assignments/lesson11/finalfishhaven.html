@@ -49,19 +49,26 @@
                     <img id="sky" src="images/fishhavenlodging-100.jpg" alt="Fish Haven's Lodging"/>
                 </picture> 
                 <div id="weatherbox">
-                    <h4>Weather Summary</h4>
-                    <p>Currently: <span id="current"></span></p>
-                    <p>High: <span id="highTemp"></span>&#176; F</p>
-                    <p>Wind Chill: <span id ="windchill"></span>&#176; F</p>
-                    <p>Humidity: <span id="humidity"></span>&#37;</p>
-                    <p>Wind Speed: <span id="speed"></span> mph</p>
-                </div>
-            </div> 
+                        <h4>Weather Summary</h4>   
+                        <br>
+                    <div class="current">
+                        <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+                        <p>Condition: <span id="description"> clear </span></p>
+                    </div>
+                        
+                    <div class="highlow">
+                        <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+                        <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
+                    </div>
+                        <br>
+                    <div class="conditions">
+                    <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+                    </div>     
         </section>
 
         <div class="hidden, fiveDay">
             <h4 class="hidden" id="forecastTitle">5 Day Forecast</h4>
-            <div class="hidden" id="forecast">
+            <div class="hidden" id="fishforecast">
                 <section id="dailyForecast"></section>  
             </div>
         </div>
@@ -112,10 +119,11 @@
     
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/fishforecast.js"></script>
     <script src="scripts/townHelper.js"></script>
     <script src="scripts/fishhaven.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/fishweather.js"></script>
+
+  
 </body>
 </html>

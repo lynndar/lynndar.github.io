@@ -49,14 +49,21 @@
                     <img id="sky" src="images/bluesky-100.jpg" alt="Beautiful sky"/>
                 </picture> 
                 <div id="weatherbox">
-                    <h4>Weather Summary</h4>
-                    <p>Currently: <span id="current"></span></p>
-                    <p>High: <span id="highTemp"></span>&#176; F</p>
-                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
-                    <p>Humidity: <span id="humidity"></span>&#37;</p>
-                    <p>Wind Speed: <span id="speed"></span> mph</p>
-                </div>
-            </div> 
+                        <h4>Weather Summary </h4>   
+                        <br>
+                    <div class="current">
+                        <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+                        <p>Condition: <span id="description"> clear </span></p>
+                    </div>
+                        
+                    <div class="highlow">
+                        <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+                        <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
+                    </div>
+                        <br>
+                    <div class="conditions">
+                    <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+                    </div>  
         </section>
 
         <div class="hidden, fiveDay">
@@ -111,9 +118,9 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/weatherapi.js"></script>
-    <script src="scripts/forecast.js"></script>
+    <script src="scripts/prestonforecast.js"></script>
     <script src="scripts/townHelper.js"></script>
     <script src="scripts/Preston.js"></script>
+    <script src="scripts/prestonweather.js"></script>
 </body>
 </html>
