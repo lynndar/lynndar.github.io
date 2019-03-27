@@ -5,7 +5,7 @@
  */
 function ShowTownInfo(jsonObj, aDomSection) {
     var towns = jsonObj['towns'];
-    var urls = { 'Preston': 'images/preston.jpg', 'Soda Springs': 'images/sodaSprings.jpg', 'Fish Haven': 'images/fishHaven.jpg'};
+    var urls = { 'Preston': 'images/prestonarea.jpg', 'Soda Springs': 'images/sodaspringsarea.jpg', 'Fish Haven': 'images/fishhavenarea.jpg'};
 
     for (var index = 0; index < towns.length; index++) {
         if (towns[index].name == "Preston" || towns[index].name == "Soda Springs" || towns[index].name == "Fish Haven") {
