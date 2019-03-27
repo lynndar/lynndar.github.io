@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Weather</title>
+    <title>Soda Springs Weather</title>
     <meta name="description" content="Weather page for Soda Springs, Idaho">
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet"  media="(max-width:700px)" href="css/finalsmall.css">
@@ -49,15 +49,22 @@
                     <img id="sky" src="images/sodaspringsgeyser-100.jpg" alt="Geyser"/>
                 </picture> 
                 <div id="weatherbox">
-                    <h4>Weather Summary</h4>
-                    <p>Currently: <span id="current"></span></p>
-                    <p>High: <span id="highTemp"></span>&#176; F</p>
-                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
-                    <p>Humidity: <span id="humidity"></span>&#37;</p>
-                    <p>Wind Speed: <span id="speed"></span> mph</p>
-                </div>
-            </div> 
-        </section>
+                <h4>Weather Summary</h4>   
+                <br>
+            <div class="current">
+                <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+                <p>Condition: <span id="description"> clear </span></p>
+            </div>
+                
+            <div class="highlow">
+                <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+                <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
+            </div>
+                <br>
+            <div class="conditions">
+            <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+            </div>  
+          </section>
 
         <div class="hidden, fiveDay">
             <h4 class="hidden" id="forecastTitle">5 Day Forecast</h4>
