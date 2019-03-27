@@ -79,7 +79,7 @@ nav a:hover {
 } 
 
 nav a:active {
-    color: blue;
+    color:darkolivegreen;
     text-shadow: 3px 3px 6px #2e2c2a;
 }
 
