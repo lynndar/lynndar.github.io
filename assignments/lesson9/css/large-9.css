@@ -1,84 +1,206 @@
-@media only screen and (min-width: 64em) {
-    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    
-    article p.town-article img { width: 29.333%; }
-      
-      /*img{width: 30em; height: auto; margin: 0}*/
-              
-      .logo{width: 10vw; height:auto; padding: 1px; float: left}
-      .dailytemp{ width: 10%; height:auto; margin: 1em}
-  } 
-  header{
-      font-size:2vw;
-      background-color: darkgreen;
-     
-      
-  }
-  
-  .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
-  }
-  
-  
-  /* WEATHER CONDITIONS*/
-      main section table {
-          text-align: center;
-          display: block;
-          width: 100%;
-      }
-      main section .data{
-          color: darkolivegreen;
-          background-color:darkkhaki;
-          font-size: 20px;
-          }	
-      span {
-          font-weight: bold;
-      }
-  
-  /*NAVIGATION BAR*/
-      /* Add a black background color to the top navigation */
-      .topnav {
-          background-color:darkkhaki;
-          overflow: hidden;
-      }
-      /* Style the links inside the navigation bar - Color of font*/
-      .topnav a {
-          float: left;
-          color: darkgreen;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 24px;
-      }
-      /* Change the color of links on hover */
-      .topnav a:hover {
-          background-color: darkolivegreen;
-          color: black;
-      }
-      /* Add a color to the active/current link */
-      .topnav a.active {
-          background-color: #FFF8DC;
-          color: black;
-      }
-  
-  
-  /*HOME PAGE TABLE*/
-      .indexpics:hover {box-shadow: 5px 5px 10px gray;}
-      #townInfo {
-      display:inline block;
-      flex-wrap: wrap;
-      }
-      #townInfo article {
-      
-      border:2px solid darkgreen;
-      margin: 5px;
-      text-align: center;
-      }
-      #townInfo img{
-      vertical-align: middle;
-      max-height:35vw;
-      }
-  
+/* General styling for pages */
+body {
+    background-color: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+    color: darkkhaki;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+h2, h3, h4 {
+    font-size: 23px;
+    font-family: 'Arvo', serif;
+}
+
+/* Styles for header */
+header {
+    background-color: darkgreen;
+    overflow: hidden;
+    border-bottom: 3px solid darkkhaki;
+    border-top: 3px solid darkkhaki;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 100px;
+    margin: 15px 0px 0px 0px;
+}
+
+header h1 {    
+    color: darkkhaki;
+    padding: 20px 20px 0 20px;
+    font-size: 35px; 
+    text-shadow: #2e2c2a 1px 1px 4px;
+}
+
+.motto p {
+    color: darkkhaki;
+    margin-left: 90px;
+    margin-top: -10px;
+    font-family: 'Arvo', serif;
+    font-size: 24px;
+}
+
+.headerItem {
+    text-align: center;
+}
+
+/* Styles for nav bar */
+ul {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: darkkhaki;
+    overflow: hidden;
+    padding: 20px 5px;
+    border-bottom: 3px solid darkgreen;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: khaki;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav a:hover {
+    color:  darkolivegreen;
+    text-shadow: 3px 3px 6px #2e2c2a;
+} 
+
+nav a:active {
+    color:darkolivegreen;
+    text-shadow: 3px 3px 6px #2e2c2a;
+}
+
+li.currentPage {
+    text-shadow: 3px 3px 6px #d8da76;
+}
+
+#hiddenMenu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+
+/* Styles for Footer */
+
+#copyright, #currentDate, #attribution {
+    color: darkkhaki;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgreen;
+    overflow: hidden;
+    padding: 10px 5px;
+    border-bottom: 3px solid #2e2c2a;
+}
+
+#attribution a {
+    text-decoration: underline;
+    color:darkkhaki;
+}
+
+/* Styles for Preston Weather Page */
+
+
+.pageTitle {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Arvo', serif;
+    text-shadow: #2e2c2a 1px 1px 4px;
+    color: darkkhaki;
+}
+
+
+
+#map {
+    float:left;
+    border: 6px solid darkgreen;
+    width: 15%;
+    margin: 3%;
+}
+
+#contactArea {
+    background-color: darkkhaki;
+    overflow: hidden;
+    border-bottom: 3px solid darkgreen;
+    border-top: 3px solid darkgreen;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#contactArea p {
+    color: darkgreen;
+}
+
+#columns {
+    width: 40%;
+    float: right;
+    margin: 2%;
+}
+
+
+
+
+
+
+
+/* Styles for Home Page */
+
+.homePage article {
+    width: 25%;
+    text-align: center;
+    background-color:white;
+    margin: 20px 20px 20px 20px;
+    border: 4px solid darkgreen;
+    box-shadow: 4px 4px 8px #2e2c2a;
+   display: inline-block;
+}
+
+.homePage section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: darkkhaki;
+}
+
+#townTitle {
+    text-align: center;
+    text-shadow: #2e2c2a 2px 2px 5px 
+}
+
+.homePage section h2 {
+    color:darkgreen;
+}
+
+.homePage section p {
+    width: 70%;
+    margin: 10px auto;
+}
+
+article img {
+    width: 100%; 
+    border: 4px brown;
+}
+
+.homePage section p:nth-child(2) {
+    font-style: italic; 
+    font-family: 'Arvo', serif;
+}
+
