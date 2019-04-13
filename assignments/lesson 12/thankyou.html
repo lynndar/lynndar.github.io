@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites|</title>
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages 
+    specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around 
+    the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Josefin+Sans" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/templelogogray.png" alt="Temple Logo">
+        <div class="heading">
+          <img id="temple" src="images/templeicon60.jpg"  alt="Temple Icon">
+          </div>
+          
+      <div>
+          <nav class="topnav">
+              <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                  <button>&#9776;</button>
+                  <p>MENU</p>
+              </div>
+                  <ul class="hide" id="primaryNav">
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="reservation.html">Reservation</a>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a>Temples<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li><a href="alaska.html">Alaska</a></li>
+                            <li><a href="sandiego.html">San Diego</a></li>
+                            <li><a href="stgeorge.html">St. George</a></li>
+                            <li class="currentPage"><a href="hawaii.html">Hawaii</a></li>
+                        </ul>
+                    <li><a>Services<i class="fa fa-sort-desc"></i></a>
+                         <ul>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="reception.html">Reception</a></li>
+                            <li><a href="kitchenettes.html">Kitchenette</a></li>              
+                        </ul>
+                    </ul>
+              </nav>
+          </div>
+                        
+        </header>                      
+
+
+
+
+<footer>
+        <div id="currentdate"></div>
+    <p class="info">&copy; 2019 Temple Inn & Suites | Lynnda Robinson</p>
+    <p id="date">
+        <script src="script/footer.js"></script>
+    </p>
+
+    <p>Phone Number: 240-555-1212 | Address: 4800 Montgomery Ln #300, Bethesda, MD 20814 | Email: frontdesk@templeinn.com  </p>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>

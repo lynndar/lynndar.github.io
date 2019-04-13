@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites|</title>
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages 
+    specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around 
+    the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Josefin+Sans" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+
+    <body>
+            <img id="logo" src="images/templelogogray.png" alt="Temple Logo">
+            <div class="heading">
+              <img id="temple" src="images/templeicon60.jpg"  alt="Temple Icon">
+              </div>
+              
+      
+       
+          <div>
+              <nav class="topnav">
+                  <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                      <button>&#9776;</button>
+                      <p>MENU</p>
+                  </div>
+                      <ul class="hide" id="primaryNav">
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="reservation.html">Reservation</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a>Temples<i class="fa fa-sort-desc"></i></a>
+                            <ul>
+                                <li class="currentPage"><a href="alaska.html">Alaska</a></li>
+                                <li><a href="sandiego.html">San Diego</a></li>
+                                <li><a href="stgeorge.html">St. George</a></li>
+                                <li><a href="hawaii.html">Hawaii</a></li>
+                            </ul>
+                            <li><a>Services<i class="fa fa-sort-desc"></i></a>
+                              <ul>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="reception.html">Reception</a></li>
+                                   <li><a href="kitchenettes.html">Kitchenette</a></li>
+                      </ul>
+                    </ul>
+              </nav>
+          </div>
+
+    <script type="text/javascript">
+        $("nav div").click(function(){
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+        });
+
+        $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();   
+        });
+
+        $(window).resize(function() {
+            if($(window).width() > 750) {
+                $("ul").removeAttr('style');
+            }
+        });
+    </script>
+
+  
+
+    <section class="mainBody">
+
+        <section class="alaska">
+            <div class="tempHeader1">
+                <h2 class="templeName">Anchorage, Alaska Temple</h2>
+            </div>
+            <div class="weatherSummary">
+                <img class="alaskaHeader" src="images/alaskatemple.jpg" alt="Alaska Temple">
+                    <section class="weatherSummary1">
+                        <h3>Weather Summary</h3>
+                            <p class="label">Currently: <span id="current-condition"></span></span></p>
+                            <p class="label">Temperature: <span id="deg"></span>&deg;F</p>
+                            <p class="label">Humidity: <span id="hum"></span>%</p>
+                    </section>
+            </div>
+            </div>
+            <div class="templeInfo">
+                <h2 class="address">Address:</h2>
+                <p class="templeAddress">13161 Brayton Dr.<br>
+                Anchorage, AK 99516<br>
+                United States</p>
+
+                <h2 class="telephone">Telephone:</h2>
+                <p class="templeNum">(1) 907-348-7890</p>
+
+                <h2 class="templeEmail">Email:</h2>
+                <p class="templeEmail1">Log in to send email to temple</p>
+
+                <h2 class="services">Services:</h2>
+                <p class="templeServices">No clothing rental available<br>
+                No Cafeteria available<br>
+                No patron housing available<br>
+                No Distribution center nearby</p>
+
+                <h2 class="ordSchedule">Ordinance Schedule:</h2>
+                <p class="schedule">please call the temple or go online to.
+                </p>
+
+                <h2 class="ordinance">Session Schedule:</h2>
+                <p class="schedule">For initiatory information and schedule, please call the temple.</p>
+
+                <h2 class="ordinance">Sealing</h2>
+                <p class="schedule">For sealing information and schedule, please call the temple.</p>
+
+                <h2 class="history">History:</h2>
+                <p class="historyInfo">4 October 1997 - Announced<br>
+                        17 April 1998 - Groundbreaking<br>
+                        9 January 1999 - Dedicated<br>
+                        8 February 2004 - Rededicated
+       </p>
+               <h2 class="closure">Temple Closure:</h2>
+               <p class="templeClosure">Monday, 25 March 2019 - Monday, 8 April 2019<br>
+                    Wednesday, 3 July 2019 - Thursday, 4 July 2019<br>
+                     Monday, 23 September 2019 - Monday, 7 October 2019<br>
+                     Wednesday, 27 November 2019 - Thursday, 28 November 2019<br>
+                     Tuesday, 24 December 2019 - Wednesday, 25 December 2019<br>
+                     Tuesday, 31 December 2019</p>
+   
+            </div>
+    </section>
+
+    </section>
+
+    <footer>
+            <div id="currentdate"></div>
+        <p class="info">&copy; 2019 Temple Inn & Suites | Lynnda Robinson</p>
+            <script src="script/footer.js"></script>
+        </p>
+
+        <p>Phone Number: 240-555-1212 | Address: 4800 Montgomery Ln #300, Bethesda, MD 20814 | Email: frontdesk@templeinn.com  </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites|</title>
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages 
+    specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around 
+    the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Josefin+Sans" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+
+    <body>
+            <img id="logo" src="images/templelogogray.png" alt="Temple Logo">
+            <div class="heading">
+              <img id="room" src="images/roomservice70.jpg"  alt="Hotel Room">
+              </div>
+                    
+          <div>
+              <nav class="topnav">
+                  <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                      <button>&#9776;</button>
+                      <p>MENU</p>
+                  </div>
+                      <ul class="hide" id="primaryNav">
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="reservation.html">Reservation</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a>Temples<i class="fa fa-sort-desc"></i></a>
+                            <ul>
+                                <li><a href="alaska.html">Alaska</a></li>
+                                <li><a href="sandiego.html">San Diego</a></li>
+                                <li><a href="stgeorge.html">St. George</a></li>
+                                <li><a href="hawaii.html">Hawaii</a></li>
+                            </ul>
+                            <li><a>Services<i class="fa fa-sort-desc"></i></a>
+                              <ul>
+                                    <li class="currentPage"><a href="services.html">Services</a></li>
+                                    <li><a href="reception.html">Reception</a></li>
+                                   <li><a href="kitchenette.html">Kitchenette</a></li>
+                      </ul>
+                    </ul>
+              </nav>
+          </div> 
+        <section>
+            <div class="wrapper">
+                <h1>Services Included:</h1><div class="blocks">
+                    <img src="images/breakfast-75.jpg" alt="breakfast" />
+                     <p>Free Contiental Breakfast for all hotel quest Breakfast is served from 6am to 9am each day.</p>
+                    </div>
+
+
+          <div class="blocks">
+                <img src="images/exroom-75.jpg" alt="exercise room" />
+                    <p>A room full of up to date exercise equipment for all your needs.</p>
+                     </div>
+
+           <div class="blocks">
+                <img src="images/Computer-room-75.jpg" alt="computer room" />
+                     <p>We have a room designated for all our up to date computers to aide you in your genealogy research while you're staying with us. </p>
+                     </div>
+
+           <div class="blocks">
+               <img src="images/pool-75.jpg"  alt="pool" />
+                      <p>Indoor heated pool for all your relaxing needs. </p>
+                      </div>
+
+           <div class="blocks">
+               <img src="images/familyhistory-75.jpg"  alt="family history" />
+                      <p>We have family history consultants on site and also family ordinance card service.</p>
+                      </div> 
+
+         <div class="blocks">
+                <img src="images/laundry-75.jpg"  alt="laundry" />
+                      <p>We have a large laundry room for our guest to use. There is a small fee for purchase of laundry soap.</p>
+                      </div>
+
+         <div class="blocks">
+                <img src="images/shuttlebus-sa.jpg"  alt="shuttlebus" />
+                        <p>For your convenience, we have a suttle bus that will take you to and from the temple at no extra cost. </p>
+                        </div>
+
+         <div class="blocks">
+                 <img src="images/changeroom-75.jpg"  alt="changing room" />
+                        <p>We have a large changing room for all those who have traveled a long way and would like to freshen up before going to the temple. This is a free service for all those attending the temple. </p>
+                        </div>
+
+         <div class="blocks">
+                  <img src="images/playroom-75.jpg"  alt="playroom" />
+                        <p>For a small fee, we offer daycare for those who have traveled with children and would like to spend time at the temple.For those local, we have a list of youth willing to watch yoour children at your home. </p>
+                        </div>     
+                        
+         <div class="blocks">
+                <div id="currentdate"></div>
+                <p class="info">&copy; 2019 Temple Inn & Suites <br> Lynnda Robinson </p>
+                <p id="date"></p>
+                <p><b>Phone Number:</b><br> 240-555-1212 <br> <b>Address:</b><br> 4800 Montgomery Ln #300, Bethesda, MD 20814<br>  <b>Email:</b><br> frontdesk@templeinn.com  </p>
+                 </div>                     
+         </section>  
+
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+
+
+</body>
+</html>

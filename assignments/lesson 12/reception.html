@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites|</title>
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages 
+    specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around 
+    the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Josefin+Sans" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+
+    <body>
+            <img id="logo" src="images/templelogogray.png" alt="Temple Logo">
+            <div class="heading">
+              <img id="reception" src="images/reception70.jpg"  alt="Reception Room">
+              </div>
+              
+      
+    
+          <div>
+              <nav class="topnav">
+                  <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                      <button>&#9776;</button>
+                      <p>MENU</p>
+                  </div>
+                      <ul class="hide" id="primaryNav">
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="reservation.html">Reservation</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a>Temples<i class="fa fa-sort-desc"></i></a>
+                            <ul>
+                                <li><a href="alaska.html">Alaska</a></li>
+                                <li><a href="sandiego.html">San Diego</a></li>
+                                <li><a href="stgeorge.html">St. George</a></li>
+                                <li><a href="hawaii.html">Hawaii</a></li>
+                            </ul>
+                          <li><a>Services<i class="fa fa-sort-desc"></i></a>
+                            <ul>
+                                 <li><a href="services.html">Services</a></li>
+                                 <li class="currentPage"><a href="reception.html">Reception</a></li>
+                                 <li><a href="kitchenettes.html">Kitchenette</a></li>
+                    </ul>
+                </ul>
+              </nav>
+          </div>
+
+          <div class="box">
+              <h1>Reception Rooms</h1>
+                  <p>Here at Temple Inn & Suites, we are home to two entertainment rooms. Both can be used for 
+                     housing a reception of your choosing. Our Beehive room allows up to 100 guests and our 
+                     Zion room, allows up to 300 guests. Both rooms come with a dance floor, band stage, and 
+                     have round tables and chairs with each one having a white table cloth. 
+                     For a small fee you can use our catering service or have use of the kitchen to create 
+                     your own menu. </p>
+                     <section>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="container">
+                                        <a href="services.html" class="imageLink"><img src="images/beehiveroom80.jpg" alt="Beehive room" class="beeroom"></a>
+                                        <div class="textBlock">
+                                            <h4 class="linkName">Beehive Room</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="column">
+                                    <div class="container">
+                                        <a href="reservations.html"><img src="images/zionroom90.jpg" alt="Zion Room" class="zion"></a>
+                                        <div class="textBlock">
+                                            <h4 class="linkName">Zion Room</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+         <footer>
+             <div id="currentdate"></div>
+                     <p class="info">&copy; 2019 Temple Inn & Suites | Lynnda Robinson </p>
+                     <p id="date">
+                     <script src="script/footer.js"></script>
+                     </p>
+                
+                     <p>Phone Number: 240-555-1212 | Address: 4800 Montgomery Ln #300, Bethesda, MD 20814 | Email: frontdesk@templeinn.com  </p>
+          </footer>
+                
+                <script src="scripts/currentdate.js"></script>
+                <script src="scripts/hamburger.js"></script>
+</body>
+</html>

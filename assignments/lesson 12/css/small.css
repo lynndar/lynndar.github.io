@@ -1,0 +1,68 @@
+@media only screen and (max-width: 700px) {
+    .column {
+        width: 100%;
+    }
+
+
+
+@media(max-width: 750px) {
+    nav div {
+          display: block;
+    }
+
+    ul {
+          display: none;
+          position: static;
+          background: #3F3E3A;
+    }
+
+    ul li {
+          display: block;
+    }
+
+    ul ul {
+          position: static;
+          background: #e3e3e3;
+    }
+    /* Styles for Hamburger Nav Menu */
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: darkmagenta;
+    display: inline-block;
+}
+
+button:focus {
+    outline: 0;
+}
+
+nav p {
+    color:darkmagenta;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 0;
+}
+
+nav button:hover, nav p:hover {
+    color: plum;
+    text-decoration: none;
+}
+.wholeHamburger{
+      text-align: center;
+      overflow: hidden;
+      border-bottom: 2px solid #2e2c2a;
+  }
+  
+  li.currentPage {
+      background-color:lightgray
+      ;
+  }
+  
+  nav ul.hide {
+      display: none;
+  }
+}
+}

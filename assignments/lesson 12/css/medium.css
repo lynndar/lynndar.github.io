@@ -1,0 +1,487 @@
+@media only screen and (min-width: 710px) and (max-width: 999) {
+
+        body {
+            font-family: 'Charm', sans;
+            margin: 0;
+        }
+        
+        .mainBody {
+            max-width: 999px;
+            margin: 0 auto;
+        }
+        button {
+          float: right;
+         margin-top: 50px;
+         margin-right: 50px;
+        }
+        button {
+          background: rgba(54, 20, 61, 1);
+          color:white;
+          width: 240px;
+          height: 80px;
+          font-size: 20px;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+        button:hover {
+          background: grey;
+        }
+        
+        /*Header*/
+        header {
+            background-color:white;
+            padding: .5rem;
+            color: darkmagenta;
+            text-align:left;
+        }
+        .heading {
+          float: right;
+          margin-top: -400px;
+        }
+        
+        .compName {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .compName h1 {
+            font-size: 3rem;
+        }
+        /*Menu Bar*/
+        nav {
+            text-align: left;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: rgba(54, 20, 61, 1);
+            position: relative;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        
+        li {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+        }
+        
+        li a {
+            display: block;
+            color:plum;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: josefin sans;
+        
+        }
+        
+        ul li {
+            display: inline-block;
+        }
+        
+        ul li:hover {
+            background: gray;
+        }
+        
+        ul ul {
+            position: absolute;
+            min-width: 200px;
+            background: #3F3E3A;
+            display: none;
+        }
+        
+        ul ul li {
+            display: block;
+            background: #3F3E3A;
+        }
+        
+        ul li:hover ul {
+            display: block;
+        }
+        
+        ul li i {
+            color: #292929;
+            float: right;
+            padding-left: 20px;
+        }
+        
+        nav div {
+            background: #3F3E3A;
+            color: #F0F3BD;
+            font-size: 24px;
+            padding: 0.6em;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .first {
+            display: none;
+        }
+        /*Kitchenette article*/
+        .kitchenette {
+            font-family: josefin, sans;
+            float: center;
+            width: 50%;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .kitchen {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        
+        .templeHeader {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            background-color: white;
+            margin-left: 50px;
+        }
+        .registration{
+          float: right;
+        }
+        /*Section Images*/
+        * {
+            box-sizing: border-box;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            background-color:white;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .wedding {
+            width: 100%;
+        }
+        
+        .templetrip {
+            width: 100%;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .textBlock {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            background-color:lightgrey;
+            color: darkmagenta;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            padding-left: 20px;
+            padding-right: 30px;
+            font-family: josefin, sans;
+        }
+        
+        
+        /*Reservation*/
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            resize: vertical;
+        }
+        
+        input[type=email] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            resize: vertical;
+        }
+        
+        input[type=tel] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            resize: vertical;
+        }
+        
+        input[type=number] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            resize: vertical;
+        }
+        
+        input[type=date] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: darkmagenta;
+            color: white;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: plum;
+        }
+        
+        .form {
+            border-radius: 5px;
+            background-color: lavenderblush;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        
+        .formRow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        #thankyou {
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+        }
+        /*TEMPLE PAGE*/
+        .heading {
+          margin-top: 80px;
+          margin: auto;
+        
+        }
+        .weatherSummary {
+            position: relative;
+        }
+        
+        .weatherSummary1 {
+            background-color: plum;
+            color: rgba(54, 20, 61, 1);
+            padding: 10px;
+            position: absolute;
+            line-height: 1em;
+            width: 230px;
+            height: 180px;
+            left: 20px;
+            top: 20px;
+            z-index: 1;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px black;
+        }
+        
+        
+        .templeName {
+            color:rgba(54, 20, 61, 1) ;
+            padding: 40px;
+            margin: 40px;
+            font-size: 40px;
+        }
+        
+        .alaskaHeader, .sandiegoHeader, .stgeorgeHeader, .hawaiiHeader {
+            width: 100%;
+        }
+        /*Headers*/
+        .address, .telephone, .services, .templeEmail, .ordinance, .templeClosure {
+            padding: 5px;
+            margin: 10px;
+        }
+        
+        
+        #name, #name2, #name3, #name4 {
+            font-size: 40px;
+        }
+        
+        #events, #events2, #events3, #events4 {
+            margin: 20px;
+            margin-top: -10px;
+            font-size: 20px;
+            
+        }
+        
+        .templeAddress, .templeNum, .templeServices, .templeEmail1, .schedule, .historyInfo, .pServices, .serviceInfo, .templeClosure {
+            margin: 20px;
+            margin-top: -10px;
+            font-size: 20px;
+            font-family: josefin, sans;
+        }
+        
+        .ordSchedule, .history {
+            font-size: 20px;
+            font-style: italic;
+            font-family: josefin, sans;
+        }
+        /*Contact Page*/
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid darkmagenta;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: darkmagenta;
+            color: white;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: plum;
+        }
+        
+        .contactContainer {
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .cInfo, .pInfo {
+            text-align: center;
+        }
+        
+        /*Services*/
+        /* Content Blocks */
+        .blocks {width:200px;
+            float:left;
+            margin-right:26px;
+            padding:10px;
+            height:315px;
+            background:white;
+            -moz-box-shadow:0 0 8px #666;
+            -webkit-box-shadow:0 0 8px #666;
+            box-shadow:0 0 8px #666;
+            text-align:justify;
+            margin-bottom:15px;
+            font-family: josefin, sans;
+           
+            }
+            .blocks img {margin-bottom:5px;}
+            .more {font-size:12px; float:right; color:#000; margin-top:7px; text-decoration:underline;}
+        .specialservices, .amenitiesHeader {
+            font-size: 25px;
+            font-family: josefin, sans;
+        }
+        .serviceInfo, .amenitiesInfo {
+            margin: 20px;
+            margin-top: -10px;
+            font-size: 20px;
+            font-family: josefin, sans;
+        }
+        .pServices, .pAmenities {
+            margin: 40px;
+            margin-top: -10px;
+            font-size: 20px;
+        }
+        /*Reception*/
+        .box {
+           font-family: josefin,sans;
+           font-size: 18px;
+           align-content: justify;
+           box-sizing: border-box;
+           float: center;
+           padding: 15px;
+           margin-left: auto;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            background-color:white;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .beeroom {
+            width: 100%;
+            border: darkmagenta solid 6px;
+        }
+        
+        .zion {
+            width: 100%;
+            border: darkmagenta solid 6px;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        
+        
+        
+        
+        /*Footer*/
+        footer {
+            background-color: rgba(54, 20, 61, 1);
+            color: white;
+            padding: .5rem;
+            padding-top: 5px;
+            text-align: center;
+            font-family: josefin, sans;
+        }
+        
+        .info {
+            width: 100%;
+            text-align: center;
+            line-height: 80%;
+        }
+        
+        #date {
+            width: 100%;
+            text-align: center;
+            line-height: 80%;
+        }
+        
+        a.refrences:link {
+            color:white ;
+            text-decoration: none;
+        }
+        
+        a.refrences:visited {
+            color: plum;
+            text-decoration: none;
+        }
+        
+        a.refrences:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+        }
+
+   
