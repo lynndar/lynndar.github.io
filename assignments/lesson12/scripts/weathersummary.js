@@ -1,6 +1,6 @@
 /*Weather for Alaska*/
 var weatherRequest = new XMLHttpRequest();
-var apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5779206&APPID= cd3872cd815886366b88e86f315579bb&units=imperial";
+var apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5879348&APPID= cd3872cd815886366b88e86f315579bb&units=imperial";
 
 weatherRequest.open('GET',apiURL,true);
 weatherRequest.responseType = "text";
