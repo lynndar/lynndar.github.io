@@ -55,6 +55,9 @@ nav button:hover, nav p:hover {
       overflow: hidden;
       border-bottom: 2px solid #2e2c2a;
   }
+  .responsive li{
+      display:block;
+    }
   
   li.currentPage {
       background-color:white;
