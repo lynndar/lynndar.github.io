@@ -55,25 +55,6 @@
               </nav>
           </div>
 
-    <script type="text/javascript">
-        $("nav div").click(function(){
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-        });
-
-        $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();   
-        });
-
-        $(window).resize(function() {
-            if($(window).width() > 750) {
-                $("ul").removeAttr('style');
-            }
-        });
-    </script>
-
-  
 
     <section class="mainBody">
 
@@ -153,6 +134,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/hawaiiweather.js"></script>
 </body>
 </html>
 

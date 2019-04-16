@@ -14,7 +14,7 @@
     <link rel="stylesheet" media="(min-width:1000px)" href="css/large.css">
     <link href="https://fonts.googleapis.com/css?family=Charm|Josefin+Sans" rel="stylesheet"> 
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
        
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
@@ -54,43 +54,26 @@
                     </ul>
               </nav>
           </div>
-
-    <script type="text/javascript">
-        $("nav div").click(function(){
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-        });
-
-        $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();   
-        });
-
-        $(window).resize(function() {
-            if($(window).width() > 750) {
-                $("ul").removeAttr('style');
-            }
-        });
-    </script>
-
-  
-
     <section class="mainBody">
 
         <section class="alaska">
             <div class="tempHeader1">
+                <div id="alaskaweather"></div>
                 <h2 class="templeName">Anchorage, Alaska Temple</h2>
             </div>
+       
             <div class="weatherSummary">
-                <img class="alaskaHeader" src="images/alaskatemple.jpg" alt="Alaska Temple">
-                    <section class="weatherSummary1">
-                        <h3>Weather Summary</h3>
-                            <p class="label">Currently: <span id="current-condition"></span></span></p>
-                            <p class="label">Temperature: <span id="deg"></span>&deg;F</p>
-                            <p class="label">Humidity: <span id="hum"></span>%</p>
-                    </section>
-            </div>
-            </div>
+                    <img class="alaskaHeader" src="images/alaskatemple-200.jpg" alt="Alaska Temple">
+                        <section class="weatherSummary1">
+                            <h3>Weather Summary</h3>
+                                <p class="label">Currently: <span id="current-condition"></span></p>
+                                <p class="label">Temperature: <span id="deg"></span>&deg;F</p>
+                                <p class="label">Humidity: <span id="hum"></span>%</p>
+                        </div>
+                </div>
+            </section>
+         
+           
             <div class="templeInfo">
                 <h2 class="address">Address:</h2>
                 <p class="templeAddress">13161 Brayton Dr.<br>
@@ -149,6 +132,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/alaskaweather.js"></script>
     <script src="scripts/weathersummary.js"></script>
 </body>
 </html>

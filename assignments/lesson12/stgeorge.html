@@ -55,29 +55,10 @@
               </nav>
           </div>
 
-    <script type="text/javascript">
-        $("nav div").click(function(){
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-        });
-
-        $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();   
-        });
-
-        $(window).resize(function() {
-            if($(window).width() > 750) {
-                $("ul").removeAttr('style');
-            }
-        });
-    </script>
-
-  
 
     <section class="mainBody">
 
-        <section class="stgeorge">
+        <section class="sgweather">
             <div class="tempHeader1">
                 <h2 class="templeName">St. George Temple</h2>
             </div>
@@ -85,7 +66,7 @@
                 <img class="georgeHeader" src="images/stgeorgetemple.jpg" alt="St. George Temple">
                     <section class="weatherSummary1">
                         <h3>Weather Summary</h3>
-                            <p class="label">Currently: <span id="current-condition"></span></span></p>
+                            <p class="label">Currently: <span id="current-condition"></span></p>
                             <p class="label">Temperature: <span id="deg"></span>&deg;F</p>
                             <p class="label">Humidity: <span id="hum"></span>%</p>
                     </section>
@@ -152,6 +133,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/sgweather.js"></script>
 </body>
 </html>
 

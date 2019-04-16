@@ -55,26 +55,6 @@
               </nav>
           </div>
 
-    <script type="text/javascript">
-        $("nav div").click(function(){
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-        });
-
-        $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();   
-        });
-
-        $(window).resize(function() {
-            if($(window).width() > 750) {
-                $("ul").removeAttr('style');
-            }
-        });
-    </script>
-
-  
-
     <section class="mainBody">
 
         <section class="diego">
@@ -88,9 +68,9 @@
                             <p class="label">Currently: <span id="current-condition"></span></span></p>
                             <p class="label">Temperature: <span id="deg"></span>&deg;F</p>
                             <p class="label">Humidity: <span id="hum"></span>%</p>
-                    </section>
+                    </div>
             </div>
-            </div>
+        </section>
             <div class="templeInfo">
                 <h2 class="address">Address:</h2>
                 <p class="templeAddress">7474 Charmant Dr.<br>

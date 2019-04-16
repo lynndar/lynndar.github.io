@@ -6,20 +6,20 @@ body {
 }
 
 .mainBody {
-    max-width: 1250px;
+    max-width: 100%;
     margin: 0 auto;
 }
 button {
   float: right;
- margin-top: 50px;
- margin-right: 50px;
+ margin-top: 80px;
+ margin-right: 80px;
 }
 button {
   background: rgba(54, 20, 61, 1);
   color:white;
-  width: 240px;
-  height: 80px;
-  font-size: 20px;
+  width: 440px;
+  height: 180px;
+  font-size: 60px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -39,16 +39,8 @@ header {
   margin-top: -400px;
 }
 
-.compName {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.compName h1 {
-    font-size: 3rem;
-}
-/*Menu Bar*/
-nav {
+ /*Menu Bar*/
+ nav {
     text-align: left;
 }
 
@@ -110,12 +102,13 @@ ul li i {
 
 nav div {
     background: #3F3E3A;
-    color: #F0F3BD;
+    color: white;
     font-size: 24px;
     padding: 0.6em;
     cursor: pointer;
     display: none;
 }
+
 
 .first {
     display: none;
@@ -165,15 +158,19 @@ nav div {
 
 .templetrip {
     width: 100%;
+    margin-bottom: 45%;
+    margin: auto;
 }
 
 .container {
-    position: relative;
+    position: absolute;
+   
 }
 
 .textBlock {
-    position: absolute;
-    bottom: 20px;
+    position: relative;
+    bottom: 40px;
+    width:45%;
     left: 0;
     background-color:lightgrey;
     color: darkmagenta;
